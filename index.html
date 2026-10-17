@@ -246,9 +246,16 @@ h2{font-size:clamp(24px,3.4vw,38px);letter-spacing:-.4px;text-align:center;margi
 .sort .arr{color:var(--primary);font-weight:700;font-size:13px;text-align:center;white-space:nowrap;display:grid;justify-items:center}
 .sort .arr::after{content:"→";font-size:20px;line-height:1}
 .flow{display:flex;align-items:center;gap:10px;margin-top:var(--s3);font-weight:600;font-size:15px}
-.flow span{border:1px solid var(--line);border-radius:12px;padding:8px 12px;background:var(--bg2);white-space:nowrap}
-.flow .wire{flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--primary) 0 8px,transparent 8px 14px);background-size:28px 2px;animation:dash 1s linear infinite}
+.flow > span{border:1px solid var(--line);border-radius:12px;padding:8px 12px;background:var(--bg2);white-space:nowrap}
+.flow .wires{display:flex;flex-direction:column;gap:8px;flex:1}
+.wire-lane{display:flex;align-items:center;gap:6px}
+.lane-arrow{font-size:13px;font-weight:700;color:var(--primary);line-height:1;user-select:none}
+.flow .wire{flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--primary) 0 8px,transparent 8px 14px);background-size:28px 2px}
+.wire-fwd{animation:dash 1s linear infinite}
+.wire-rev{animation:dash-rev 1s linear infinite}
 @keyframes dash{to{background-position:28px 0}}
+@keyframes dash-rev{to{background-position:-28px 0}}
+@media (prefers-reduced-motion: reduce){.wire-fwd,.wire-rev{animation:none}}
 .term{margin-top:var(--s2);font:13.5px/1.75 ui-monospace,Consolas,monospace;background:var(--bg2);border:1px solid var(--line);border-radius:var(--r-sm);padding:12px 14px;color:var(--muted)}
 .term b{color:var(--primary);font-weight:600}
 .t-guide .shot{max-width:300px;margin:var(--s2) auto 0;background:#fff;border-radius:22px;border:6px solid var(--device)}
@@ -859,10 +866,17 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       </div>
     </div>
     <div class="tile t-sync rv d1">
-      <div class="k">② ไปเอง (ทะลุลิมิตแชท AI)</div>
-      <h3><span class="nowrap">โผล่ในคอม</span>โดยไม่ต้องทำอะไร</h3>
-      <p>บันทึกในมือถือปุ๊บ วิ่งตรงเข้าคอมผ่าน P2P ทันที — แชท AI ปกติมัก<b>ไม่รองรับไฟล์วิดีโอ</b> หรือจำกัดขนาดไฟล์ไม่เกิน <b>30 MB</b> แต่เมื่อซิงค์ผ่าน Obsidian ส่งไฟล์คลิปยาวขนาดใหญ่ถึง <b>283 MB</b> ได้สบาย ไม่ติดลิมิต</p>
-      <div class="flow"><span>มือถือ</span><i class="wire"></i><span>คอม</span></div>
+      <div class="k">② ไปเอง (ซิงค์สองทาง ทะลุลิมิตแชท AI)</div>
+      <h3><span class="nowrap">ซิงค์สองทางอัตโนมัติ</span> วิ่งถึงกันทั้งมือถือและคอม</h3>
+      <p>บันทึกในมือถือปุ๊บ วิ่งตรงเข้าคอมผ่าน P2P ทันที และเมื่อคอมทำงานเสร็จ ผลลัพธ์ก็ซิงค์กลับมาเปิดตรวจบนมือถือได้ตลอดเวลา — แชท AI ปกติมัก<b>ไม่รองรับไฟล์วิดีโอ</b> หรือจำกัดขนาดไฟล์ไม่เกิน <b>30 MB</b> แต่เมื่อซิงค์สองทางผ่าน Obsidian ส่งไฟล์คลิปยาวขนาดใหญ่ถึง <b>283 MB</b> ได้สบาย ไม่ติดลิมิต ไร้สาย ปลอดภัยในเครื่องคุณ 100%</p>
+      <div class="flow">
+        <span>มือถือ</span>
+        <div class="wires">
+          <div class="wire-lane"><span class="lane-arrow">←</span><i class="wire wire-rev"></i></div>
+          <div class="wire-lane"><i class="wire wire-fwd"></i><span class="lane-arrow">→</span></div>
+        </div>
+        <span>คอม</span>
+      </div>
       <div class="sync-proof-grid swipe-row">
         <figure class="proof-shot">
           <span class="sync-badge-limit bad">แชท AI: ไม่รองรับวิดีโอ</span>
