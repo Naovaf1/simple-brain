@@ -553,7 +553,7 @@ td.us{font-weight:700;color:var(--ok)}
 /* ===== Proof Shots (Visual Proofs across Bento & Pro Cards) ===== */
 .proof-shot{margin:0;display:flex;flex-direction:column;background:var(--bg);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .2s ease;cursor:default}
 .proof-shot:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
-.proof-shot img{width:100%;height:auto;display:block;object-fit:contain;background:#090a0d}
+.proof-shot img, .proof-shot video{width:100%;height:auto;display:block;object-fit:contain;background:#090a0d}
 .proof-shot figcaption{margin-top:auto;padding:6px 10px;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;background:var(--card);border-top:1px solid var(--line)}
 
 .share-video-callout{margin-top:var(--s3);background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:grid;grid-template-columns:280px 1fr;gap:16px;align-items:center}
@@ -856,12 +856,15 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       </ol>
       <div class="share-video-callout">
         <figure class="proof-shot">
-          <img src="assets/proof/proof_video_record.webp" alt="การอัดวิดีโอหน้าจอมือถือเพื่อส่งบริบทเข้า Obsidian" width="400" height="889" loading="lazy">
-          <figcaption>อัดคลิปหน้าจอแชร์เข้าโน้ต</figcaption>
+          <video controls playsinline preload="metadata" poster="assets/proof/proof_video_record.webp" width="400" height="889" style="width:100%;height:auto;border-radius:10px;display:block;">
+            <source src="assets/clips/mobile_workflow_demo.mp4" type="video/mp4">
+            <img src="assets/proof/proof_video_record.webp" alt="การสั่งงาน AI และพัฒนาเว็บผ่านมือถือโดยไม่ต้องแตะคอม" width="400" height="889" loading="lazy">
+          </video>
+          <figcaption>วิดีโอใช้งานจริง: สั่ง AI พัฒนาเว็บผ่านมือถือ</figcaption>
         </figure>
         <div>
-          <div class="sync-badge-limit good">📹 อัดคลิปหน้าจอส่งบริบทในคลิกเดียว</div>
-          <p><b>รวมถึงการอัดคลิปวิดีโอหน้าจอ:</b> ไม่ว่าจะเจอบั๊กในแอป หรืออยากอธิบายงานยาวๆ ไม่ต้องพิมพ์ข้อความยาวเหยียด เพียงกดอัดคลิปหน้าจอบนมือถือ แล้วแตะแชร์เข้า Daily Note ในคลิกเดียว วิดีโอจะถูกส่งต่อให้ AI บนคอมช่วยแก้ปัญหาทันที</p>
+          <div class="sync-badge-limit good">📱 พัฒนาเว็บ & สั่งการ AI จบในมือถือเครื่องเดียว (ไม่ต้องแตะคอม)</div>
+          <p><b>ทำงานจริงบนมือถือ 100%:</b> ไม่จำเป็นต้องนั่งหน้าคอมอีกต่อไป คุณสามารถสั่งงาน AI, ดีบักโค้ด, ตรวจประวัติ Git, แนบไฟล์บริบท และพัฒนาโปรเจกต์ได้จากมือถือเครื่องเดียวที่ไหนก็ได้บนโลก แค่อัดคลิปหน้าจอหรือแชร์โน้ตเข้า Obsidian ทุกอย่างจะถูกส่งต่อให้ AI บนคอมช่วยแก้ปัญหาและซิงค์กลับมาให้คุณทันที</p>
         </div>
       </div>
     </div>
