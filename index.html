@@ -1582,7 +1582,8 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
   /* pro workflow rows: same centre + cap rule */
   .wf-grid-pair{align-items:center!important}
   .wf-grid-pair .wf-shot img,.wf-grid-pair .proof-shot img{max-height:420px!important;object-fit:cover!important;object-position:top!important}
-  .wf-grid-single .wf-shot img{max-height:420px!important;object-fit:cover!important;object-position:top!important}
+  /* single key shots (e.g. the phone home screen with the Wi-Fi plug) are shown in full, never cropped */
+  .wf-grid-single .wf-shot img{max-height:none!important;max-width:380px;width:100%;height:auto!important;object-fit:contain!important;margin:0 auto}
   /* 7.5 feature boxes: media vertically centred in the shorter card */
   .feature-proof{margin-left:auto!important;margin-right:auto!important;margin-top:auto!important;margin-bottom:auto!important;max-width:280px}
   .feature-proof img{max-height:380px!important;object-fit:cover!important;object-position:top!important}
@@ -1595,6 +1596,9 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
   .share-video-callout .proof-shot{max-width:300px}
   .share-video-callout p{font-size:17px}
 }
+/* Master Note shot must show the attached PDF viewer at the bottom: never crop it */
+img[src*="proof_note_master_pdf"][src*="proof_note"][src*="master"][src*="pdf"]{max-height:none!important;height:auto!important;object-fit:contain!important}
+
 /* big/hi-res screens: scale the whole page up so text and cards are not tiny */
 @media (min-width:1700px){ html{zoom:1.15} .wrap{max-width:1320px} }
 @media (min-width:1900px){ html{zoom:1.3}  .wrap{max-width:1280px} }
