@@ -1487,6 +1487,64 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
 }
 </style>
 
+<style>
+/* ===== Desktop layout (>=861px only; mobile/tablet untouched) ===== */
+@media (min-width:861px){
+  /* 1. image strips -> visible equal-column grids (no hidden horizontal scroll) */
+  .swipe-row{
+    display:grid!important;
+    grid-auto-flow:column!important;
+    grid-auto-columns:minmax(0,1fr)!important;
+    overflow:visible!important;
+    scroll-snap-type:none!important;
+    gap:16px!important;
+    padding-bottom:0!important;
+    align-items:start!important;
+  }
+  .swipe-row>figure,.swipe-row>.proof-shot,.swipe-row>.wf-shot{
+    flex:none!important;
+    max-width:none!important;
+    min-width:0!important;
+    width:100%!important;
+  }
+  .wf-grid-pair.swipe-row{max-width:760px;margin-left:auto;margin-right:auto}
+  .wf-grid-pair.swipe-row:has(> :nth-child(3)){max-width:none}
+
+  /* 2. bento: every tile full width, content-sized, text beside media */
+  .tile p{max-width:75ch}
+  .t-sync,.t-agent,.t-daily,.t-guide{grid-column:span 6}
+  .t-sync{order:2}.t-agent{order:3}.t-guide{order:4}.t-daily{order:5}
+  .t-sync .flow{max-width:560px}
+  .t-sync .sync-proof-grid{margin-top:var(--s3)}
+  .t-agent{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr repeat(3,min-content) 1fr;column-gap:var(--s4)}
+  .t-agent>.term{grid-column:2;grid-row:1 / span 5;align-self:center;margin-top:0;}
+  .t-agent>.k{grid-column:1;grid-row:2}.t-agent>h3{grid-column:1;grid-row:3}.t-agent>p{grid-column:1;grid-row:4}
+  .t-agent .term{font-size:14.5px}
+  .t-guide{display:grid;grid-template-columns:1fr 240px;grid-template-rows:1fr repeat(3,min-content) 1fr;column-gap:var(--s4)}
+  .t-guide>.shot{grid-column:2;grid-row:1 / span 5;align-self:center;margin:0;max-width:240px;max-height:none;}
+  .t-guide>.k{grid-column:1;grid-row:2}.t-guide>h3{grid-column:1;grid-row:3}.t-guide>p{grid-column:1;grid-row:4}
+  .t-daily{display:block}
+  .t-daily .daily-proof-grid{margin-top:var(--s3);gap:14px!important;grid-auto-flow:row!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+  .t-daily .daily-proof-grid .proof-shot img{max-height:360px!important;object-fit:contain!important}
+  .t-daily .daily-proof-grid .proof-shot figcaption{font-size:12.5px;padding:8px 10px}
+  .share-video-callout{grid-template-columns:260px minmax(0,460px);justify-content:center;gap:var(--s4);padding:20px 24px}
+  .share-video-callout .proof-shot{max-width:260px}
+  .share-video-callout p{font-size:16px;line-height:1.7}
+
+  /* generic card grids: content-sized, no giant empty cards */
+  .cards.pro-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+  .card p,.pro-feature-box p,.pro-wf-card-meta p{max-width:75ch}
+  .pro-features-grid{max-width:1000px}
+  .feature-proof{margin-left:auto;margin-right:auto;max-width:280px}
+  .card-proof-row:not(.swipe-row){max-width:260px}
+  .companion-screen-off-box{grid-template-columns:minmax(0,420px) 300px;justify-content:center;gap:40px}
+  /* keep tall phone shots from leaving big empty areas */
+  .t-guide>.shot{max-height:440px;overflow:hidden}
+  .t-guide>h3{font-size:1.6em}
+  .feature-proof img{max-height:380px;object-fit:cover;object-position:top}
+}
+</style>
+
 <script>
 /* ----- motion: reveal & theme switch ----- */
 (function(){
