@@ -515,7 +515,10 @@ td.us{font-weight:700;color:var(--ok)}
 /* ===== Pro Workflow Showcase ===== */
 .pro-workflow{margin:var(--s4) auto;max-width:920px}
 .pro-wf-head{text-align:center;margin-bottom:var(--s4)}
-.bed-hl{color:var(--primary);font-weight:800;font-size:1.08em;background:rgba(60,207,149,.18);border:1.5px solid var(--primary);padding:0 10px;border-radius:999px;white-space:nowrap;display:inline-block;margin:2px 0}
+.scope-note{font-size:12.5px;color:var(--muted);text-align:center;margin:8px 0 0;line-height:1.5}
+.affiliate-note{font-size:12.5px;color:var(--muted);text-align:center;margin:10px auto 0;max-width:680px;line-height:1.55}
+.affiliate-note b{color:var(--text)}
+footer a{color:inherit;text-decoration:underline;margin:0 6px}
 .pro-wf-badge{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--primary);background:var(--primary-soft);border:1px solid var(--line);border-radius:999px;padding:5px 14px;margin-bottom:12px}
 .pro-wf-title{font-size:clamp(22px,3.2vw,32px);margin-bottom:8px}
 .pro-wf-lead{font-size:16px;line-height:1.65;color:var(--muted);max-width:680px;margin:0 auto}
@@ -766,11 +769,12 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
     <div class="hero-content">
       <div class="hero-eyebrow rv"><b></b><span><span class="nowrap">ผู้ช่วยส่วนตัวผ่าน Obsidian</span> · <span class="nowrap">ซิงค์มือถือ ↔ คอม</span></span></div>
       <h1 class="hero-title rv d1"><span class="nowrap">มีผู้ช่วย AI ติดตัวทั้งวัน</span><br><span class="hero-subline nowrap">แค่มือถือเครื่องเดียว</span></h1>
-      <p class="hero-lead rv d2"><b>ซิงค์ Obsidian <span class="nowrap">ระหว่างมือถือ Android</span> <span class="nowrap">กับคอม Windows</span> — <span class="nowrap">ไม่มีค่ารายเดือน</span></b><br><span class="nowrap">ข้อมูลอยู่ในเครื่องคุณเอง</span> <span class="nowrap">ไม่ขึ้นคลาวด์</span> · <span class="nowrap">ใช้แพ็ก AI ที่คุณมีอยู่แล้ว</span> <span class="nowrap">ไม่ต้องต่อ API</span> <span class="nowrap">หรือจ่ายเพิ่ม</span></p>
+      <p class="hero-lead rv d2"><b>ซิงค์ Obsidian <span class="nowrap">ระหว่างมือถือ Android</span> <span class="nowrap">กับคอม Windows</span> — <span class="nowrap">ไม่มีค่ารายเดือน</span></b><br><span class="nowrap">ข้อมูลเก็บในเครื่องคุณเอง</span> · <span class="nowrap">ใช้แพ็ก AI ที่มีอยู่แล้ว</span> <span class="nowrap">ไม่ต้องต่อ API</span></p>
       <div class="hero-cta rv d3">
         <a class="btn" href="#buy"><span class="nowrap">79 บาท ครั้งเดียว</span></a>
         <a class="btn ghost" href="#story"><span class="nowrap">ดู 1 วันของคุณ ↓</span></a>
       </div>
+      <p class="scope-note rv d3">ใช้กับ Windows 10/11 (64-bit) + Android · ยังไม่รองรับ iPhone/Mac</p>
       <div class="hero-trust rv d3">
         <span class="hero-trust-item"><span class="check">✓</span> <span>ติดตั้งง่ายสำหรับมือใหม่ — <span class="nowrap">ไม่ต้องตั้ง Syncthing เอง</span></span></span>
         <span class="hero-trust-item"><span class="check">✓</span> <span>มีโฟลเดอร์ Obsidian <span class="nowrap">พร้อมใช้ (template)</span></span></span>
@@ -816,10 +820,10 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
 
           <!-- Narrative Content Card -->
           <div class="stage-content">
-            <div class="spirit-badge">✨ ภูติแทน AI ที่คุณเลือกใช้ — Claude Code / ChatGPT Codex / Google Antigravity หรือตัวอื่น</div>
+            <div class="spirit-badge">✨ ใช้ได้กับ AI ที่คุณมี — Claude Code / ChatGPT Codex / Google Antigravity</div>
             <div class="stage-chapter" id="stageChapter">ฉากที่ 1 จาก 12</div>
             <h3 class="stage-title" id="stageTitle">07:00 ตื่นนอน — เจอข่าวดี แตะแชร์ลง Obsidian</h3>
-            <p class="stage-desc" id="stageDesc">ตื่นมาจับมือถือไถฟีด เจอบทความหรือข่าวดีๆ กดปุ่มแชร์ของมือถือแล้วเลือก Obsidian ปุ๊บ ลิงก์และข้อความวิ่งตรงเข้า Daily Note ประจำวันทันที</p>
+            <p class="stage-desc" id="stageDesc">เจอข่าวหรือบทความดีๆ กดแชร์แล้วเลือก Obsidian ลิงก์และข้อความเข้า Daily Note วันนี้ทันที</p>
             <div class="stage-box">
               <div class="stage-box-item">
                 <span class="box-icon">📱</span>
@@ -827,10 +831,10 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
               </div>
               <div class="stage-box-item">
                 <span class="box-icon">⚡</span>
-                <div><b>เบื้องหลัง:</b> <span id="stageBackend">ซิงค์ตรง P2P ไปรอที่คอมที่บ้านทันที ไม่ผ่านคลาวด์รายเดือน</span></div>
+                <div><b>เบื้องหลัง:</b> <span id="stageBackend">ซิงค์ไปรอที่คอมที่บ้าน ไม่ผ่านเซิร์ฟเวอร์เก็บไฟล์กลาง</span></div>
               </div>
             </div>
-            <div class="stage-tag" id="stageTag">#แชร์แตะเดียว #DailyNote #ไม่ต้องเปิดคอม</div>
+            <div class="stage-tag" id="stageTag">#แชร์แตะเดียว #DailyNote</div>
           </div>
         </div>
       </div>
@@ -843,35 +847,35 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
 <!-- 2. ทำไมต้อง Obsidian ที่ซิงค์ (Bento) -->
 <section class="alt" id="why"><div class="wrap">
   <h2 class="rv">ทำไมต้องมี Obsidian ที่ซิงค์คอม–มือถือ</h2>
-  <p class="sub rv d1">เพราะข้อมูลระหว่างวันส่วนใหญ่มาจากมือถือ — และทุกอย่างที่คอมทำได้ มือถือในมือคุณก็ทำได้เหมือนกัน</p>
+  <p class="sub rv d1">ข้อมูลระหว่างวันส่วนใหญ่มาจากมือถือ — ให้มันไปรอที่คอมเอง</p>
   <div class="bento">
     <div class="tile t-share rv">
       <div class="k">① แตะเดียว</div>
       <h3>เจออะไรดีก็กดแชร์ <span class="nowrap">เลือก Obsidian</span></h3>
-      <p>ลิงก์จาก Instagram, Facebook, เว็บ, ไฟล์เสียง หรือภาพ — 2 แตะจากเมนูแชร์ของมือถือ ก็ไปต่อท้ายโน้ตของวันนี้แล้ว</p>
+      <p>ลิงก์ ภาพ หรือไฟล์เสียงจากแอปไหนก็ได้ กดแชร์แล้วเลือก Obsidian ก็ไปต่อท้ายโน้ตวันนี้เลย</p>
       <ol class="steps">
         <li><div class="shot"><img src="assets/shots/share_step1.webp" alt="ขั้นที่ 1: เมนูแชร์ของ Android วงไว้ที่ไอคอน Obsidian" loading="lazy"></div><div class="cap"><b>1</b><span>กดแชร์ แล้วเลือก Obsidian<small>จากแอปไหนก็ได้ที่มีปุ่มแชร์</small></span></div></li>
         <li><div class="shot"><img src="assets/shots/share_step2.webp" alt="ขั้นที่ 2: หน้าต่าง Obsidian ถามว่าจะเพิ่มลงไฟล์ไหน วงไว้ที่ Today's daily note" loading="lazy"></div><div class="cap"><b>2</b><span>แตะ “Today's daily note”<small>ไม่ต้องเปิดแอป ไม่ต้องพิมพ์</small></span></div></li>
-        <li><div class="shot"><img src="assets/shots/share_step3.webp" alt="ขั้นที่ 3: ลิงก์และไฟล์เสียงที่แชร์มาต่อท้ายโน้ตประจำวัน" loading="lazy"></div><div class="cap"><b>3</b><span>ไปต่อท้ายโน้ตวันนี้ทันที<small>แล้วซิงก์ไปคอมเอง</small></span></div></li>
+        <li><div class="shot"><img src="assets/shots/share_step3.webp" alt="ขั้นที่ 3: ลิงก์และไฟล์เสียงที่แชร์มาต่อท้ายโน้ตประจำวัน" loading="lazy"></div><div class="cap"><b>3</b><span>ไปต่อท้ายโน้ตวันนี้ทันที<small>แล้วซิงค์ไปคอมเอง</small></span></div></li>
       </ol>
       <div class="share-video-callout">
         <figure class="proof-shot">
           <video controls playsinline preload="metadata" poster="assets/proof/proof_mobile_workflow.webp?v=20261018" width="400" height="889" style="width:100%;height:auto;border-radius:10px;display:block;">
             <source src="assets/clips/mobile_workflow_demo.mp4?v=20261018" type="video/mp4">
-            <img src="assets/proof/proof_mobile_workflow.webp?v=20261018" alt="การสั่งงาน AI และพัฒนาเว็บผ่านมือถือโดยไม่ต้องแตะคอม" width="400" height="889" loading="lazy">
+            <img src="assets/proof/proof_mobile_workflow.webp?v=20261018" alt="การสั่งงาน AI และพัฒนาเว็บผ่านมือถือ" width="400" height="889" loading="lazy">
           </video>
           <figcaption>วิดีโอใช้งานจริง: สั่ง AI พัฒนาเว็บผ่านมือถือ</figcaption>
         </figure>
         <div>
-          <div class="sync-badge-limit good">📱 พัฒนาเว็บ & สั่งการ AI จบในมือถือเครื่องเดียว (ไม่ต้องแตะคอม)</div>
-          <p><b>ทำงานจริงบนมือถือ 100%:</b> ไม่จำเป็นต้องนั่งหน้าคอมอีกต่อไป คุณสามารถสั่งงาน AI, ดีบักโค้ด, ตรวจประวัติ Git, แนบไฟล์บริบท และพัฒนาโปรเจกต์ได้จากมือถือเครื่องเดียวที่ไหนก็ได้บนโลก แค่อัดคลิปหน้าจอหรือแชร์โน้ตเข้า Obsidian ทุกอย่างจะถูกส่งต่อให้ AI บนคอมช่วยแก้ปัญหาและซิงค์กลับมาให้คุณทันที</p>
+          <div class="sync-badge-limit good">📱 สั่ง AI พัฒนาเว็บจากมือถือเป็นหลัก</div>
+          <p><b>สั่งงานจากมือถือได้จริง:</b> สั่ง AI ตรวจโค้ด ดูประวัติ Git แนบไฟล์บริบท แล้วให้คอมที่บ้านทำต่อ ผลซิงค์กลับมาดูบนมือถือ (คอมต้องเปิดอยู่ตอนให้ AI ทำงาน)</p>
         </div>
       </div>
     </div>
     <div class="tile t-sync rv d1">
-      <div class="k">② ไปเอง (ซิงค์สองทาง ทะลุลิมิตแชท AI)</div>
+      <div class="k">② ซิงค์สองทาง</div>
       <h3><span class="nowrap">ซิงค์สองทางอัตโนมัติ</span> วิ่งถึงกันทั้งมือถือและคอม</h3>
-      <p><b>ทุกอย่างที่คอมทำได้ มือถือที่อยู่ในมือคุณตลอดเวลาก็ทำได้เหมือนกัน:</b> บันทึกในมือถือปุ๊บ วิ่งตรงเข้าคอมผ่าน P2P ทันที และเมื่อคอมทำงานเสร็จ ผลลัพธ์ก็ซิงค์กลับมาเปิดตรวจบนมือถือได้ตลอดเวลา — แชท AI ปกติมัก<b>ไม่รองรับไฟล์วิดีโอ</b> หรือจำกัดขนาดไฟล์ไม่เกิน <b>30 MB</b> แต่เมื่อซิงค์สองทางผ่าน Obsidian ส่งไฟล์คลิปยาวขนาดใหญ่ถึง <b>283 MB</b> ได้สบาย ไม่ติดลิมิต ไร้สาย ปลอดภัยในเครื่องคุณ 100%</p>
+      <p><b>บันทึกบนมือถือไปถึงคอมเอง</b> และผลจากคอมซิงค์กลับมาดูบนมือถือ แชท AI มักแนบวิดีโอไม่ได้หรือติดลิมิตขนาดไฟล์ แต่ผ่าน Obsidian แนบไฟล์ใหญ่และคลิปวิดีโอได้ (ตัวอย่างจริงด้านล่าง)</p>
       <div class="flow">
         <span>มือถือ</span>
         <div class="wires">
@@ -882,33 +886,33 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       </div>
       <div class="sync-proof-grid swipe-row">
         <figure class="proof-shot">
-          <span class="sync-badge-limit bad">แชท AI: ไม่รองรับวิดีโอ</span>
+          <span class="sync-badge-limit bad">ตัวอย่าง: เปิดวิดีโอไม่ได้</span>
           <img src="assets/proof/proof_video_unsupported.webp" alt="Google Antigravity Unsupported file format dialog" width="400" height="308" loading="lazy">
-          <figcaption>แชท AI ทั่วไปเปิดวิดีโอไม่ได้</figcaption>
+          <figcaption>ตัวอย่างแชท AI ที่เปิดวิดีโอไม่ได้</figcaption>
         </figure>
         <figure class="proof-shot">
-          <span class="sync-badge-limit bad">Claude: ลิมิต 30 MB</span>
+          <span class="sync-badge-limit bad">Claude: ติดลิมิตขนาดไฟล์</span>
           <img src="assets/proof/proof_claude_30mb_limit.webp" alt="Claude file size limit 30MB dialog" width="400" height="267" loading="lazy">
-          <figcaption>ติดลิมิตขนาดไฟล์ 30 MB</figcaption>
+          <figcaption>แชท AI ติดลิมิตขนาดไฟล์</figcaption>
         </figure>
         <figure class="proof-shot">
-          <span class="sync-badge-limit good">Obsidian: ซิงค์ได้ 283 MB</span>
-          <img src="assets/proof/proof_video_283mb.webp" alt="283 MB video file sent via Obsidian" width="400" height="267" loading="lazy">
-          <figcaption>ส่งคลิป 283 MB สบายๆ เข้าคอม</figcaption>
+          <span class="sync-badge-limit good">Obsidian: แนบไฟล์ใหญ่ได้</span>
+          <img src="assets/proof/proof_video_283mb.webp" alt="Large video file sent via Obsidian" width="400" height="267" loading="lazy">
+          <figcaption>ส่งคลิปไฟล์ใหญ่เข้าคอมได้สบาย</figcaption>
         </figure>
       </div>
     </div>
     <div class="tile t-agent rv d2">
       <div class="k">③ คอมทำให้</div>
       <h3>ใช้ AI ที่คุณมีอยู่แล้ว <span class="nowrap">ทำงานต่อให้</span></h3>
-      <p>ใช้กับ agent ที่คุณมี — <span class="nowrap">Claude Code</span> / <span class="nowrap">ChatGPT Codex</span> / <span class="nowrap">Google Antigravity</span> และอื่นๆ — AI บนคอมสามารถเข้าถึงไฟล์วิดีโอขนาดใหญ่และรูปภาพใน Daily Note ได้โดยตรง วินิจฉัยและแก้ปัญหาได้ทันทีโดยไม่ติดขัด ผลลัพธ์เขียนลง Obsidian ให้ตรวจและสั่งงานต่อจากมือถือ</p>
-      <div class="term">&gt; อ่านโน้ตวันนี้และคลิปวิดีโอ 283 MB…<br>&gt; วินิจฉัยปัญหาและสร้างโค้ดแก้ไข <b>✓</b><br>&gt; เขียนผลลง daily note ให้ตรวจบนมือถือ <b>✓</b></div>
+      <p>ใช้กับ agent ที่คุณมี เช่น <span class="nowrap">Claude Code</span> / <span class="nowrap">ChatGPT Codex</span> / <span class="nowrap">Google Antigravity</span> — AI บนคอมเปิดวิดีโอและภาพใน Daily Note ได้ตรงๆ แล้วเขียนผลลงโน้ตให้ตรวจจากมือถือ</p>
+      <div class="term">&gt; อ่านโน้ตวันนี้และคลิปวิดีโอ…<br>&gt; วินิจฉัยปัญหาและสร้างโค้ดแก้ไข <b>✓</b><br>&gt; เขียนผลลง daily note ให้ตรวจบนมือถือ <b>✓</b></div>
     </div>
     <div class="tile t-daily rv">
       <div>
         <div class="k">ไม่ต้องจัดเอง · <a href="#pro">แพ็ก Pro</a></div>
         <h3>โยนรวมไว้หน้าเดียว <span class="nowrap">AI แยกให้ทีหลัง</span></h3>
-        <p>ระหว่างวันแชร์อะไรก็กองไว้ในโน้ตวันนี้ ไม่ต้องคิดว่าจะเก็บหมวดไหน — AI บนคอมมาอ่าน สรุป แล้วคัดแยกออกเป็น 3 หมวดอัตโนมัติ: งาน To-Do ลง Personal Tasks, สรุปความรู้ลง Wiki และ Master Note สังเคราะห์เลกเชอร์พร้อมไฟล์ PDF</p>
+        <p>กองทุกอย่างไว้ในโน้ตวันนี้ แล้วให้ AI บนคอมคัดแยกเป็น To-Do, ความรู้ใน Wiki และ Master Note สรุปเลกเชอร์พร้อม PDF</p>
       </div>
       <div class="daily-proof-grid swipe-row">
         <figure class="proof-shot">
@@ -924,8 +928,8 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
           <figcaption>3. โฟลเดอร์ Daily Digests</figcaption>
         </figure>
         <figure class="proof-shot">
-          <img src="assets/proof/proof_note_digest_94.webp" alt="ใบเสร็จย่อยโน้ตครบ 94/94 ชิ้น 100%" width="400" height="889" loading="lazy">
-          <figcaption>4. ใบเสร็จย่อยครบ 100% (94 ชิ้น)</figcaption>
+          <img src="assets/proof/proof_note_digest_94.webp" alt="ใบเสร็จย่อยโน้ตครบ 94/94 ชิ้น" width="400" height="889" loading="lazy">
+          <figcaption>4. ใบเสร็จย่อยครบ 94/94 ชิ้น</figcaption>
         </figure>
         <figure class="proof-shot">
           <img src="assets/proof/proof_note_digest_lecture.webp" alt="ตัวอย่างการสังเคราะห์เลกเชอร์จากรูป 19 รูป" width="400" height="889" loading="lazy">
@@ -941,7 +945,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       <div class="k">มีคู่มือในตัว</div>
       <h3>เปิดครั้งแรกก็รู้ว่า<span class="nowrap">ทำอะไรต่อ</span></h3>
       <div class="shot"><img src="assets/shots/welcome.webp" alt="หน้าคู่มือต้อนรับใน Obsidian บนมือถือ: วิธีใช้งานทุกวันและโฟลเดอร์ในสมองของคุณ" loading="lazy"></div>
-      <p style="font-size:13.5px;color:var(--muted);margin-top:8px;">คู่มือและขั้นตอนภาษาไทย โครงสร้างพร้อมใช้ตั้งแต่เปิดแอป</p>
+      <p style="font-size:13.5px;color:var(--muted);margin-top:8px;">คู่มือภาษาไทย โครงสร้างพร้อมใช้ตั้งแต่เปิดแอป</p>
     </div>
   </div>
 </div></section>
@@ -949,7 +953,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
 <!-- 3. ไม่มีรายเดือน: Desktop Table + Mobile 3-Card Stack -->
 <section><div class="wrap">
   <h2>ไม่ต้องจ่ายรายเดือน</h2>
-  <p class="sub">ลงแอป Obsidian + แอปซิงค์ในมือถือ แล้วติดตั้งบนคอมครั้งเดียว</p>
+  <p class="sub">ลงแอปในมือถือ แล้วติดตั้งบนคอมครั้งเดียว</p>
 
   <!-- Desktop View: Table -->
   <div class="price-table-desktop">
@@ -957,7 +961,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       <tr><th></th><th>Simple Brain</th><th>Obsidian Sync</th><th>Notion (Plus)</th></tr>
       <tr><td>ราคา</td><td class="us">79 บาท ครั้งเดียว<br><small style="color:var(--muted);font-weight:400;">(ไม่มีค่ารายเดือน)</small></td><td>US$4 ต่อเดือน (จ่ายรายปี)<br>หรือ US$5 ต่อเดือน (จ่ายรายเดือน)</td><td>US$10 ต่อสมาชิกต่อเดือน<br>(ตอนเลือกจ่ายรายปี)</td></tr>
       <tr><td>จ่ายซ้ำทุกเดือน</td><td class="us">ไม่มี (จ่ายครั้งเดียว จบ)</td><td>มี (ตัดบัตรทุกเดือน)</td><td>มี (ตัดบัตรทุกเดือน)</td></tr>
-      <tr><td>การเก็บข้อมูล</td><td class="us">อยู่ในเครื่องคุณ ไม่ขึ้นคลาวด์ (P2P)</td><td>เก็บบนเซิร์ฟเวอร์ Obsidian</td><td>เก็บบนคลาวด์ของ Notion</td></tr>
+      <tr><td>การเก็บข้อมูล</td><td class="us">เก็บในเครื่องคุณ ซิงค์ตรงระหว่างเครื่อง (P2P)</td><td>เก็บบนเซิร์ฟเวอร์ Obsidian</td><td>เก็บบนคลาวด์ของ Notion</td></tr>
       <tr><td>ใช้ร่วมกับ AI</td><td class="us">ใช้กับ agent ที่คุณมี<br><small style="color:var(--muted);font-weight:400;"><span class="nowrap">Claude Code</span> / <span class="nowrap">ChatGPT Codex</span> / <span class="nowrap">Google Antigravity</span> และอื่นๆ</small></td><td>ซิงค์ไฟล์อย่างเดียว</td><td>มีค่าบริการ Notion AI เพิ่ม</td></tr>
     </table>
   </div>
@@ -971,10 +975,10 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       <div class="p-card-price">79 บาท</div>
       <div class="p-card-sub">จ่ายครั้งเดียว ไม่มีค่ารายเดือน</div>
       <ul class="p-card-features">
-        <li><span class="ok">✓</span> <span><b>ไม่มีค่ารายเดือน:</b> จ่าย 79 บาทครั้งเดียว จบ</span></li>
-        <li><span class="ok">✓</span> <span><b>ข้อมูลส่วนตัว:</b> เก็บในเครื่องคุณ ไม่ขึ้นคลาวด์บริษัทอื่น</span></li>
-        <li><span class="ok">✓</span> <span><b>ทำงานร่วมกับ AI:</b> ใช้กับ agent ที่คุณมี — <span class="nowrap">Claude Code</span> / <span class="nowrap">ChatGPT Codex</span> / <span class="nowrap">Google Antigravity</span> และอื่นๆ</span></li>
-        <li><span class="ok">✓</span> <span><b>คู่มือภาษาไทย:</b> โครงสร้าง template พร้อมใช้งานทันที</span></li>
+        <li><span class="ok">✓</span> <span><b>ไม่มีค่ารายเดือน:</b> จ่าย 79 บาทครั้งเดียว</span></li>
+        <li><span class="ok">✓</span> <span><b>ข้อมูลส่วนตัว:</b> เก็บในเครื่องคุณ ซิงค์ตรงระหว่างเครื่อง</span></li>
+        <li><span class="ok">✓</span> <span><b>ใช้กับ AI ที่คุณมี:</b> <span class="nowrap">Claude Code</span> / <span class="nowrap">ChatGPT Codex</span> / <span class="nowrap">Google Antigravity</span> และอื่นๆ</span></li>
+        <li><span class="ok">✓</span> <span><b>คู่มือภาษาไทย:</b> พร้อม template</span></li>
       </ul>
     </div>
 
@@ -984,7 +988,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       <div class="p-card-price">US$4 - 5 <small>/ เดือน</small></div>
       <div class="p-card-sub">US$4 ต่อเดือน (จ่ายรายปี) หรือ US$5 ต่อเดือน (จ่ายรายเดือน)</div>
       <ul class="p-card-features">
-        <li><span class="no">✗</span> <span>มีค่าบริการตัดบัตรรายเดือนต่อเนื่องทุกเดือน</span></li>
+        <li><span class="no">✗</span> <span>ตัดบัตรรายเดือน</span></li>
         <li><span class="ok">✓</span> <span>ซิงค์ไฟล์ระหว่างอุปกรณ์</span></li>
         <li><span class="no">✗</span> <span>ไม่มีระบบส่งต่อให้ AI ในเครื่องทำงานแทน</span></li>
       </ul>
@@ -996,25 +1000,25 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       <div class="p-card-price">US$10 <small>/ สมาชิก / เดือน</small></div>
       <div class="p-card-sub">US$10 ต่อสมาชิกต่อเดือน (จ่ายรายปี)</div>
       <ul class="p-card-features">
-        <li><span class="no">✗</span> <span>มีค่าบริการรายเดือนตัดต่อเนื่องทุกเดือน</span></li>
-        <li><span class="no">✗</span> <span>ข้อมูลเก็บอยู่บนคลาวด์บริษัทอื่น ไม่ใช่เครื่องของคุณ</span></li>
-        <li><span class="no">✗</span> <span>ต้องจ่ายเงินเพิ่มหากต้องการใช้ระบบ Notion AI</span></li>
+        <li><span class="no">✗</span> <span>ตัดบัตรรายเดือน</span></li>
+        <li><span class="no">✗</span> <span>ข้อมูลเก็บบนคลาวด์ของบริษัทอื่น</span></li>
+        <li><span class="no">✗</span> <span>Notion AI คิดค่าบริการเพิ่ม</span></li>
       </ul>
     </div>
   </div>
 
-  <p class="src">ราคาเช็กจากเว็บทางการเมื่อ 15 ต.ค. 2026: <a href="https://obsidian.md/pricing">obsidian.md/pricing</a> · <a href="https://www.notion.com/pricing">notion.com/pricing</a> (หน้า Notion แสดงราคาตอนเลือก "Pay yearly" และระบุว่าจ่ายรายปีลดได้สูงสุด 20%) · ราคาเป็นดอลลาร์สหรัฐ · สองบริการนั้นให้ฟีเจอร์ต่างจากเรา เราให้เฉพาะระบบซิงค์และโครงสร้างคลังสมอง</p>
+  <p class="src">ราคาเช็กจากเว็บทางการเมื่อ 15 ต.ค. 2026: <a href="https://obsidian.md/pricing">obsidian.md/pricing</a> · <a href="https://www.notion.com/pricing">notion.com/pricing</a> (Notion แสดงราคาตอนเลือก "Pay yearly") · เป็นดอลลาร์สหรัฐ · สองบริการนั้นให้ฟีเจอร์ต่างจากเรา</p>
 </div></section>
 
 <!-- 4. ติดตั้ง 3 ขั้น -->
 <section class="alt"><div class="wrap">
   <h2>ติดตั้ง 3 ขั้นตอนง่ายๆ</h2>
-  <p class="sub">ไม่ต้องเป็นสายเทคนิค — ทำตามหน้าจอทีละขั้น</p>
+  <p class="sub">ทำตามหน้าจอทีละขั้น</p>
   <div class="cards">
     <div class="card">
       <div class="n">ขั้น 1 · มือถือ</div>
       <h3>ลงสองแอปจาก Play Store</h3>
-      <p>ลง Obsidian และ Syncthing-Fork (แอปซิงค์ฟรี ปลอดภัยแบบ Open Source)</p>
+      <p>ลง Obsidian และ Syncthing-Fork (ฟรี โอเพนซอร์ส)</p>
     </div>
     <div class="card">
       <div class="n">ขั้น 2 · คอม</div>
@@ -1025,7 +1029,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
     <div class="card">
       <div class="n">ขั้น 3 · มือถือ</div>
       <h3>สแกน QR แล้วเปิดโฟลเดอร์ใน Obsidian</h3>
-      <p>ทำตามขั้นบนหน้าจับคู่ รวมถึงขั้นกดรับโฟลเดอร์ในมือถือ — คู่มือเต็มอยู่ในโน้ต START HERE ที่มากับตัวติดตั้ง</p>
+      <p>ทำตามหน้าจับคู่ รวมถึงขั้นกดรับโฟลเดอร์ในมือถือ คู่มือเต็มอยู่ในโน้ต START HERE</p>
     </div>
   </div>
 </div></section>
@@ -1033,32 +1037,32 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
 <!-- 5. บอกตรงๆ ก่อนซื้อ -->
 <section><div class="wrap">
   <h2>บอกตรงๆ ก่อนซื้อ</h2>
-  <p class="sub">อ่านข้อนี้ก่อนตัดสินใจ จะได้เข้าใจการทำงานอย่างถูกต้อง</p>
+  <p class="sub">อ่านก่อนตัดสินใจ</p>
   <ul class="honest">
-    <li><b>จดในมือถือได้ตลอด แม้คอมปิด</b> — เปิดคอมเมื่อไหร่ซิงค์ตามเอง · และถ้าจะให้ AI ทำงาน ก็ต้องเปิดคอมอยู่แล้ว</li>
-    <li><b>ตอนนี้: Windows + Android</b> · ส่วน iPhone / Mac: กำลังทำ</li>
-    <li><b>เราให้ระบบซิงค์ + โครงสร้าง vault</b> — ส่วน AI ใช้ agent ที่คุณมีอยู่แล้ว เช่น <span class="nowrap">Claude Code</span> / <span class="nowrap">ChatGPT Codex</span> / <span class="nowrap">Google Antigravity</span> และอื่นๆ</li>
+    <li><b>จดในมือถือได้แม้คอมปิด</b> — ซิงค์เมื่อเปิดคอม ส่วนงานที่ให้ AI ทำต้องเปิดคอมไว้</li>
+    <li><b>ตอนนี้ใช้ได้กับ Windows 10/11 (64-bit) + Android</b> · ยังไม่รองรับ iPhone/Mac · iPad ใช้เป็นรีโมทควบคุมเท่านั้น</li>
+    <li><b>เราให้ระบบซิงค์ + โครงสร้าง vault</b> ส่วน AI ใช้ agent ที่คุณมีอยู่แล้ว</li>
   </ul>
   <div class="warnbox">
-    💡 <b>ทำไม Windows ถึงขึ้นเตือนตอน<span class="nowrap">เปิดตัวติดตั้ง?</span></b><br>
-    ตัวติดตั้งเป็นไฟล์ Setup.exe ที่เราพัฒนาขึ้นมาเองและยังไม่ได้ซื้อใบรับรองดิจิทัลประจำปีราคาแพงจากไมโครซอฟท์ บนหน้าจอ SmartScreen อาจขึ้นเตือนสีฟ้าว่า "Windows protected your PC" ให้กดที่คำว่า <b>"More info" (ข้อมูลเพิ่มเติม)</b> แล้วเลือก <b>"Run anyway" (เรียกใช้ต่อไป)</b> ได้อย่างมั่นใจ ปลอดภัยแบบ Open Source P2P (ไม่มีสปายแวร์)
+    💡 <b>ทำไม Windows ขึ้นเตือนตอน<span class="nowrap">เปิดตัวติดตั้ง?</span></b><br>
+    ตัวติดตั้ง Setup.exe เราทำเองและยังไม่มีใบรับรองดิจิทัลของ Microsoft SmartScreen จึงอาจขึ้นเตือน ถ้าเชื่อใจให้กด <b>"More info"</b> แล้ว <b>"Run anyway"</b>
   </div>
 </div></section>
 
 <!-- 6. แพ็ก Pro: workflow อัตโนมัติสำเร็จรูปจากคนสร้าง (ซื้อที่ #buy ที่เดียว) -->
 <section class="alt" id="pro"><div class="wrap">
   <h2>แพ็ก Pro — คลังสมองอัตโนมัติ</h2>
-  <p class="sub">workflow อัตโนมัติสำเร็จรูป ชุดเดียวกับที่คนสร้างใช้เองทุกวัน — ซื้อแล้วหยิบไปใช้ได้เลย</p>
+  <p class="sub">workflow สำเร็จรูปชุดเดียวกับที่คนสร้างใช้เองทุกวัน</p>
 
   <div class="pro-slogan">
     <q>จดได้เร็วที่สุด <span class="nowrap">โดยไม่ต้องคิดเรื่องจัดระเบียบ</span></q>
-    <p>การจดโน้ตเสียเวลา คนส่วนใหญ่เลยไม่จด — แพ็ก Pro ให้คุณแค่โยนทุกอย่างลงโน้ตวันนี้ แล้ว<b>สั่งงานสั้นๆ ให้ AI คัดแยก 3 ประเภทอัตโนมัติ</b>: งานที่ต้องทำจัดเก็บเข้า Personal Tasks (หรือซิงค์ Google Tasks เมื่อตั้งค่าเสริม) · ความรู้ถูกเรียบเรียงลง Wiki · งานโปรเจกต์ส่งต่อให้ AI ทำต่อ</p>
+    <p>โยนทุกอย่างลงโน้ตวันนี้ แล้ว<b>สั่งสั้นๆ ให้ AI คัดแยก 3 อย่าง</b>: งานที่ต้องทำ → Personal Tasks (หรือ Google Tasks เมื่อตั้งค่าเสริม) · ความรู้ → Wiki · งานโปรเจกต์ → ส่งให้ AI ทำต่อ</p>
   </div>
 
   <ul class="pro-trust">
-    <li><span class="check">✓</span><span><b>คนสร้างทดสอบแล้วว่าใช้ได้จริง ไม่ใช่ไอเดียบนกระดาษ</b> — พิสูจน์จากเว็บนี้ทั้งหมด พัฒนา<b class="bed-hl">🛏️ ตอนนอนอยู่บนเตียง</b> แทบไม่แตะคอมพิวเตอร์ สั่งงานและตรวจงานทุกอย่างผ่านมือถือ</span></li>
-    <li><span class="check">✓</span><span><b>คนสร้างใช้เองทุกวัน</b> — ได้โฟลเดอร์ระบบ กฎ Agent และความจำถาวรชุดเดียวกัน เลือกหยิบเฉพาะบล็อกที่อยากใช้</span></li>
-    <li><span class="check">✓</span><span><b>จ่ายครั้งเดียว ได้ workflow ใหม่ทุกตัวที่เพิ่มตามมา</b> — เจออะไรน่าสนใจและใช้ได้จริง คนสร้างจะเพิ่มลงแพ็กเรื่อยๆ ไม่ต้องจ่ายซ้ำ</span></li>
+    <li><span class="check">✓</span><span><b>คนสร้างใช้จริง ไม่ใช่ไอเดียบนกระดาษ</b> — สร้างเว็บนี้ทั้งหมดโดยสั่งงานผ่านมือถือเป็นหลัก</span></li>
+    <li><span class="check">✓</span><span><b>ใช้เองทุกวัน</b> — ได้โฟลเดอร์ระบบ กฎ Agent และความจำถาวรชุดเดียวกัน หยิบเฉพาะบล็อกที่อยากใช้</span></li>
+    <li><span class="check">✓</span><span><b>จ่ายครั้งเดียว ได้ workflow ใหม่ที่เพิ่มตามมา</b> ไม่ต้องจ่ายซ้ำ</span></li>
   </ul>
 
   <!-- Showcase: Workflow ที่ผู้สร้างใช้จริงทุกวัน -->
@@ -1066,7 +1070,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
     <div class="pro-wf-head">
       <div class="pro-wf-badge">📱 ภาพถ่ายหน้าจอมือถือจริงของผู้สร้าง</div>
       <h3 class="pro-wf-title">Workflow ที่คนสร้างใช้จริงทุกวัน</h3>
-      <p class="pro-wf-lead">AI หลายตัว ทำงานบนสมุดเล่มเดียว — <b>Obsidian คือสมุดกลาง</b> ที่ทุก agent เขียนผลงานลงไป คุณดูความคืบหน้าและตรวจผลได้ที่เดียว จากมือถือ</p>
+      <p class="pro-wf-lead">AI หลายตัวทำงานบนสมุดเล่มเดียว — <b>Obsidian คือสมุดกลาง</b> คุณดูความคืบหน้าและตรวจผลได้จากมือถือ</p>
     </div>
 
     <!-- Mini HTML/CSS Architecture Diagram -->
@@ -1082,7 +1086,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
         <b>Obsidian (สมุดกลาง)</b>
         <span class="hub-tag">Single Source of Truth</span>
       </div>
-      <div class="pro-diag-arrow down">↓ ซิงค์ P2P ทันที</div>
+      <div class="pro-diag-arrow down">↓ ซิงค์ P2P</div>
       <div class="diag-node user">
         <span class="node-icon">📱</span>
         <b>คุณบนมือถือ</b>
@@ -1097,7 +1101,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
         <div class="pro-wf-card-meta">
           <span class="wf-step">ขั้นที่ 1</span>
           <h4>สั่งงาน AI จากมือถือ (Claude Code Remote)</h4>
-          <p>เลือกเซสชันงานที่รันอยู่บนคอม หรือเปิดเซสชันและเชื่อมต่อรีโมทใหม่จากหน้าจอแอปบนมือถือได้โดยตรง แล้วพิมพ์สั่งงาน สั่งให้ AI คิดและแก้ปัญหาต่อได้ทุกที่</p>
+          <p>เลือกเซสชันที่รันอยู่บนคอม หรือเปิดเซสชันใหม่จากมือถือ แล้วพิมพ์สั่งงานได้เลย</p>
         </div>
         <div class="wf-grid-pair swipe-row">
           <figure class="wf-shot">
@@ -1116,7 +1120,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
         <div class="pro-wf-card-meta">
           <span class="wf-step hub-step">⭐ หัวใจหลัก (สมุดกลาง)</span>
           <h4>เปิดดูผลใน Obsidian บนมือถือ</h4>
-          <p>ทุกงาน ทุกเช็กลิสต์ และทุกหลักฐานถูกเขียนลงโน้ตใน <code>raw/</code> ตรวจสอบได้ทันที ไม่ต้องเปิดคอม</p>
+          <p>งาน เช็กลิสต์ และหลักฐานอยู่ในโน้ตใน <code>raw/</code> เปิดตรวจจากมือถือได้</p>
         </div>
         <div class="wf-grid-pair swipe-row">
           <figure class="wf-shot">
@@ -1132,10 +1136,10 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
         <!-- Claude Visual Review Evidence Box (Full width) -->
         <div class="wf-visual-review-box" style="margin-top:16px;padding-top:16px;border-top:1px solid var(--line);">
           <div style="margin-bottom:12px;">
-            <span class="sync-badge-limit good" style="margin-bottom:8px;">🔍 หลักฐานเชิงประจักษ์: เห็นชัดว่า Agent แต่ละตัวทำอะไร ตรงไหน และเห็นหน้าจออย่างไร</span>
-            <h5 style="font-size:16px;font-weight:700;margin:4px 0 6px;line-height:1.4;">ไม่ต้องเดาว่า AI ทำงานจริงไหม — เปิดดูผลตรวจพร้อมภาพหน้าจอทีละเฟรมได้ทันที</h5>
+            <span class="sync-badge-limit good" style="margin-bottom:8px;">🔍 เห็นชัดว่า Agent ทำอะไร ตรงไหน</span>
+            <h5 style="font-size:16px;font-weight:700;margin:4px 0 6px;line-height:1.4;">เปิดดูผลตรวจพร้อมภาพหน้าจอทีละข้อ</h5>
             <p style="margin:0;font-size:14px;color:var(--muted);line-height:1.6;">
-              กดที่สารบัญ <b>🔍 ผลตรวจล่าสุด (Claude)</b> บนมือถือ จะเห็นเลยว่าตัวตรวจ (Claude) แกะภาพหน้าจอจริงทีละเฟรมจากคลิปอัดหน้าจอ เทียบกับโค้ดจริง (<code>pairing_template.html:455</code>) ชี้จุดที่ผ่าน (✅) จุดที่ต้องแก้ (❌) พร้อมสั่งส่งไม้ต่อชัดเจนว่า <b>➡️ AGY ทำงานย่อย 2.2</b> ทำให้เรานึกภาพตามสถานการณ์นั้นๆ ออกทันทีและเห็นผลลัพธ์เชิงประจักษ์โดยไม่ต้องเดา
+              เปิดหัวข้อ <b>🔍 ผลตรวจล่าสุด</b> บนมือถือ จะเห็นตัวตรวจบอกชัดว่าข้อไหนผ่าน (✅) ข้อไหนต้องแก้ (❌) แล้วส่งต่อให้ AI ตัวทำแก้ต่อ
             </p>
           </div>
           <div class="wf-grid-pair swipe-row">
@@ -1156,7 +1160,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
         <div class="pro-wf-card-meta">
           <span class="wf-step">ขั้นที่ 3</span>
           <h4>Google Antigravity ทำงานผ่าน Remote Control (คุมคอมจากมือถือ)</h4>
-          <p>ในภาพคือ <b>Google Antigravity</b> ที่ใช้ฟีเจอร์ <b>Remote Control เชื่อมหน้าจอควบคุมจากคอมลงมาสั่งงานบนมือถือ</b> — มีกฎสั่งงานและเทมเพลตมาตรฐานในตัว สั่ง AI ตัวเดียวให้ดึง Sub-agent ช่วยทำ หรือเปิด 2 แชทแยกบทบาท (ตัวสั่ง/ตรวจ + ตัวทำ) ไม่ปล่อยให้ AI ตรวจตัวเอง</p>
+          <p><b>Google Antigravity</b> ใช้ Remote Control คุมงานบนคอมจากมือถือ มีกฎและเทมเพลตในตัว ให้ AI ตัวเดียวเรียก Sub-agent หรือแยก 2 แชท (ตัวสั่ง/ตรวจ + ตัวทำ) ไม่ให้ AI ตรวจตัวเอง</p>
         </div>
         <div class="wf-grid-pair swipe-row">
           <figure class="wf-shot">
@@ -1172,15 +1176,15 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
         <!-- Multi-Tab Remote Control Highlight (Full width) -->
         <div class="wf-multitab-box" style="margin-top:16px;padding-top:16px;border-top:1px solid var(--line);">
           <div style="margin-bottom:12px;">
-            <span class="sync-badge-limit good" style="margin-bottom:8px;">💻 Multi-Tab Remote Control บน iPad / แท็บเล็ต / มือถือ</span>
-            <h5 style="font-size:16px;font-weight:700;margin:4px 0 6px;line-height:1.4;">เปิดหลายแท็บพร้อมกันบนเบราว์เซอร์ได้เลย (สั่งงานคู่ขนานไม่จำกัด)</h5>
+            <span class="sync-badge-limit good" style="margin-bottom:8px;">💻 หลายแท็บบน iPad / แท็บเล็ต / มือถือ</span>
+            <h5 style="font-size:16px;font-weight:700;margin:4px 0 6px;line-height:1.4;">เปิดหลายแท็บคู่ขนานบนเบราว์เซอร์</h5>
             <p style="margin:0;font-size:14px;color:var(--muted);line-height:1.6;">
-              อย่างในภาพบน iPad ที่เปิด <code>antigravity.google.com</code> <b>3 แท็บทำงานคู่ขนานพร้อมกัน</b> (หรือจริงๆ จะเปิดกี่แท็บก็ได้ไม่จำกัด) — เพราะ <b>คอมพิวเตอร์ของเราเป็นคนประมวลผลและรัน Sub-agent ทำงานหนักทั้งหมด</b> ส่วน iPad หรือมือถือเป็นเพียง <b>รีโมทคอนโทรล (Remote Control) ที่ไว้ใช้แสดงผลและพูดคุยโต้ตอบสั่งงาน</b> ส่งคำสั่งกลับไปที่คอมพิวเตอร์ได้พร้อมกันหลายโปรเจกต์โดยเครื่องไม่ร้อนและไม่กินทรัพยากรเครื่องพกพา
+              ในภาพ iPad เปิด <code>antigravity.google.com</code> 3 แท็บพร้อมกัน คอมที่บ้านเป็นคนรันงานหนักทั้งหมด ส่วน iPad เป็น<b>รีโมทควบคุมเท่านั้น</b> (ไม่ได้ติดตั้ง Simple Brain บน iPad)
             </p>
           </div>
           <figure class="proof-shot" style="margin:0;">
             <img src="assets/proof/proof_ipad_multitab.webp" alt="Google Antigravity Multi-Tab Remote Control บน iPad เปิด 3 แท็บทำงานคู่ขนาน" width="1024" height="677" loading="lazy">
-            <figcaption>iPad เปิด Google Antigravity Remote Control 3 แท็บทำงานคู่ขนาน คอมที่บ้านเป็นคนแบกงานหนักทั้งหมด</figcaption>
+            <figcaption>iPad เปิด Remote Control 3 แท็บ งานหนักรันบนคอมที่บ้าน</figcaption>
           </figure>
         </div>
       </div>
@@ -1190,7 +1194,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
         <div class="pro-wf-card-meta">
           <span class="wf-step">หน้าจอมือถือจริง</span>
           <h4>ทุกอย่างอยู่ในมือถือเครื่องเดียว</h4>
-          <p>หน้าโฮมมือถือจริงของผู้สร้าง รวม 5 เครื่องมือที่ใช้ประจำ: <b>① Google Antigravity</b> · <b>② Obsidian</b> · <b>③ Syncthing</b> · <b>④ Claude Code</b> · <b>⑤ ปลั๊ก Wi-Fi สั่งเปิด/ปิดคอม</b></p>
+          <p>5 เครื่องมือบนหน้าโฮมมือถือจริงของผู้สร้าง: <b>① Google Antigravity</b> · <b>② Obsidian</b> · <b>③ Syncthing</b> · <b>④ Claude Code</b> · <b>⑤ ปลั๊ก Wi-Fi</b></p>
         </div>
         <div class="wf-grid-single">
           <figure class="wf-shot">
@@ -1206,8 +1210,8 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
   <div class="pro-companion-card rv" id="plug-companion">
     <div class="companion-head">
       <span class="companion-pill">🔌 อุปกรณ์ที่คนสร้างใช้จริง (Hardware Companion)</span>
-      <h3 class="companion-title">สั่งเปิด/ปิดคอมจากเตียงนอน หรือจากที่ไหนก็ได้บนโลก</h3>
-      <p class="companion-lead">ตรงกับ <b>⑤ ในหน้าโฮมมือถือ</b> — เวลาไปเที่ยวหรือเดินทางไม่ต้องพกโน้ตบุ๊ก วางคอมไว้ที่บ้าน สั่งเปิดปลั๊กไฟให้คอมตื่น ให้ AI Agent ทำงานผ่าน Remote Control บนมือถือ ทำเสร็จสั่งปิดปลั๊กไฟให้คอมดับได้เองจากทุกที่</p>
+      <h3 class="companion-title">เปิด/ปิดคอมที่บ้านจากมือถือด้วยปลั๊ก Wi-Fi</h3>
+      <p class="companion-lead">ตรงกับ <b>⑤ ในหน้าโฮมมือถือ</b> — วางคอมไว้ที่บ้าน สั่งเปิดปลั๊กให้คอมตื่น ใช้ AI ผ่าน Remote Control แล้วสั่งปิดเมื่อเสร็จ</p>
     </div>
     <div class="companion-body">
       <div class="companion-img-box">
@@ -1219,13 +1223,13 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
           <span class="cm-tag">⚡ 16A–20A ทนไฟสูง</span>
           <span class="cm-tag">📱 สั่งผ่าน Smart Life</span>
           <span class="cm-tag">📊 วัดพลังงานไฟได้</span>
-          <span class="cm-tag">🌍 สั่งงานได้จากทั่วโลก</span>
+          <span class="cm-tag">🌐 สั่งผ่านอินเทอร์เน็ต</span>
         </div>
         <ul class="companion-specs">
-          <li><b>เปิดคอมอัตโนมัติจากทุกที่:</b> ทำงานร่วมกับโหมด <i>AC Power Loss (Restore on AC / Power On)</i> ใน BIOS สั่งเปิดสวิตช์ในมือถือ คอมบูตเข้าสู่ระบบและรัน Startup Tasks พร้อมให้รีโมทสั่งงานทันที</li>
-          <li><b>เดินทางตัวเบา ไม่ต้องพกโน้ตบุ๊ก:</b> วางคอมไว้ที่บ้าน ไปเที่ยวหรือทำงานนอกสถานที่แค่มีมือถือเครื่องเดียว สั่งเปิดคอม รีโมทคุม AI ทำเสร็จสั่งปิด ประหยัดไฟและปลอดภัย 100%</li>
-          <li><b>ปลอดภัยสำหรับคอม:</b> รองรับกำลังไฟ 16A–20A เสียบปลั๊กพ่วงคอมพิวเตอร์และจอมอนิเตอร์ได้สบาย ไม่ต้องกลัวไฟกระชาก</li>
-          <li><b>ไม่ต้องใช้ Hub:</b> ต่อ Wi-Fi 2.4GHz ที่บ้านตรงเข้าแอป Smart Life ได้ทันที (มีคู่มือแนะนำการตั้งค่า BIOS และระบบให้อย่างละเอียด)</li>
+          <li><b>เปิดคอมอัตโนมัติ:</b> เปิดปลั๊กแล้วคอมบูตเอง (ต้องเปิดตัวเลือก <i>Restore on AC Power Loss</i> ใน BIOS ก่อน)</li>
+          <li><b>เดินทางโดยไม่ต้องพกโน้ตบุ๊ก:</b> วางคอมไว้บ้าน สั่งเปิด/ปิดจากมือถือ ประหยัดไฟ</li>
+          <li><b>รับไฟ 16A–20A:</b> พอสำหรับคอมพร้อมจอ (เช็กสเปกรุ่นที่ซื้ออีกครั้ง)</li>
+          <li><b>ไม่ต้องใช้ Hub:</b> ต่อ Wi-Fi 2.4GHz เข้าแอป Smart Life ได้เลย มีคู่มือตั้งค่า BIOS ให้</li>
         </ul>
         <div class="companion-action-row">
           <a href="https://s.shopee.co.th/6AlqDLqy6q" target="_blank" rel="noopener sponsored" class="btn btn-shopee" id="shopeePlugLink">
@@ -1233,18 +1237,19 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
           </a>
           <span class="companion-price-hint">ราคาประมาณ 119–215 บาท (ร้านทางการในไทย)</span>
         </div>
+        <p class="affiliate-note">⚠️ <b>ลิงก์แนะนำ (Affiliate)</b> — เราอาจได้ค่าคอมมิชชัน โดยราคาของคุณไม่เปลี่ยน · อุปกรณ์นี้<b>ไม่รวมอยู่ในแพ็ก 79/99 บาท</b> ต้องซื้อแยกเอง</p>
       </div>
     </div>
 
     <div class="companion-screen-off-box">
       <div class="companion-screen-off-content">
-        <span class="sync-badge-limit good" style="margin-bottom:8px;">🔋 สภาพคอมจริงตอนทำงาน: วางทิ้งไว้หน้าจอดับสนิทเพื่อประหยัดไฟ</span>
-        <h4>ไม่จำเป็นต้องเปิดหน้าจอทิ้งไว้ตอนมันทำงาน — เพราะ AI Agent รันเบื้องหลังบนคอมให้ทั้งหมด</h4>
-        <p>นี่คือสภาพคอมพิวเตอร์จริงที่วางทิ้งไว้ขณะกำลังรันงาน — ปิดหน้าจอดำสนิทเพื่อประหยัดไฟลงไปอีกและถนอมหน้าจอ ไม่ต้องเปิดจอทิ้งไว้ให้เปลืองไฟ เพราะระบบมีกฎบังคับให้ AI Agent รันงานและเทสต์ทั้งหมดแบบเบื้องหลัง (Background Execution) บนคอมพิวเตอร์ให้เอง เรามีหน้าที่แค่รอตรวจผลลัพธ์สุดท้ายผ่านมือถือหรือ iPad</p>
+        <span class="sync-badge-limit good" style="margin-bottom:8px;">🔋 ปิดจอคอมระหว่างรันงานได้</span>
+        <h4>ไม่ต้องเปิดจอทิ้งไว้ เพราะ AI รันเบื้องหลัง</h4>
+        <p>กฎในแพ็กให้ AI รันและเทสต์แบบเบื้องหลัง เรารอตรวจผลจากมือถือหรือ iPad</p>
       </div>
       <figure class="proof-shot">
         <img src="assets/proof/proof_pc_screen_off.webp" alt="สภาพคอมพิวเตอร์จริงขณะกำลังรันงาน หน้าจอดำสนิทเพื่อประหยัดไฟ" width="728" height="840" loading="lazy">
-        <figcaption>สภาพคอมจริงที่วางทิ้งไว้ขณะรันงาน: ปิดหน้าจอดับสนิท AI Agent ทำงานเบื้องหลัง ไม่เปลืองไฟ</figcaption>
+        <figcaption>คอมจริงขณะรันงาน หน้าจอดับ AI ทำงานเบื้องหลัง</figcaption>
       </figure>
     </div>
   </div>
@@ -1256,9 +1261,9 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
     <div style="display:flex;gap:12px;align-items:flex-start;">
       <span style="font-size:24px;line-height:1;flex:none;">💡</span>
       <div>
-        <h4 style="margin:0 0 6px;font-size:15.5px;font-weight:700;color:var(--text);">สำหรับคนที่ไม่มีหรือติดตั้งไม่เป็น นี่คืองานแรกที่คุณจะได้ทดสอบ AI Agent ของคุณเอง สั่งมันได้เลย!</h4>
+        <h4 style="margin:0 0 6px;font-size:15.5px;font-weight:700;color:var(--text);">ไม่มี Python/Git? ให้ AI ติดตั้งให้เป็นงานแรก</h4>
         <p style="margin:0;font-size:13.5px;color:var(--muted);line-height:1.6;">
-          ไม่ต้องกังวลเรื่องการตั้งค่าเครื่อง เพียงเปิดแชทแล้วพิมพ์สั่ง AI Agent สั้นๆ ว่า <i>"ช่วยติดตั้ง Python และ Git ให้หน่อย"</i> แล้วปล่อยให้ AI จัดการดาวน์โหลดและติดตั้งให้เสร็จสรรพในคอมพิวเตอร์ของคุณอัตโนมัติ
+          เปิดแชทแล้วสั่ง AI Agent ว่า <i>"ช่วยติดตั้ง Python และ Git ให้หน่อย"</i>
         </p>
       </div>
     </div>
@@ -1268,7 +1273,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
     <div class="card">
       <div class="n">① กฎ AI ตรวจงาน</div>
       <h3>AI ตรวจงานกันเอง (ไม่ตรวจตัวเอง)</h3>
-      <p>ไม่ปล่อยให้ AI ชมตัวเอง ทุกอย่างต้องมีหลักฐานจริงยืนยัน — <b>โดยทั่วไปสามารถสั่งโมเดลหลักในแชทให้เรียก Sub-agent โมเดลที่เล็กกว่าออกมาทำงาน แล้วโมเดลหลักรอตรวจทานตอนสุดท้ายก่อนส่งมอบได้ทันทีเพื่อความรวดเร็ว แต่หากต้องการความแม่นยำสูงสุด ให้เลือกคนตรวจเป็นคนนอก (Third-party Reviewer เช่น ใช้ Claude ตรวจ Google Antigravity หรือใช้คนละค่าย) เพื่อลดความเอนเอียง (No Self-Bias) และได้ผลลัพธ์ที่เที่ยงตรงที่สุด</b> รองรับทั้งโหมดสั่งงานเร็ว (Direct Builder + Sub-agent Delegation) โหมด 2 แชทแยกบทบาท (ตัวสั่ง/ตรวจ + ตัวทำ) และโหมด AI ค่ายอื่น พร้อมระบบควบคุมบริบทไม่ให้เกิน Context Cap 40%</p>
+      <p>ไม่ปล่อยให้ AI ตรวจงานตัวเอง ต้องมีหลักฐานจริง — ให้ AI ตัวหนึ่งทำ อีกตัวตรวจ (จะใช้ตัวตรวจคนละค่ายก็ได้ เช่น Claude ตรวจงาน Google Antigravity) หรือแยก 2 แชท ตัวสั่ง/ตรวจ กับตัวทำ</p>
       <div class="card-proof-row swipe-row">
         <figure class="proof-shot">
           <img src="assets/proof/proof_block1_review.webp" alt="Google Antigravity ส่งคำสั่งให้ Claude Code ตรวจงานผ่าน claude_review.py" width="400" height="267" loading="lazy">
@@ -1288,7 +1293,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
     <div class="card">
       <div class="n">② บันทึกประวัติ</div>
       <h3>ย้อนเวอร์ชันได้ทุกครั้งด้วย Git</h3>
-      <p>AI เช็กเวอร์ชันและย้อนกลับไปจุด Checkpoint ที่ต้องการแก้ไขได้เอง บันทึกประวัติอัตโนมัติในคอม หากสั่ง AI ทำงานแล้วผลลัพธ์เละหรือไม่ถูกใจ สามารถดับเบิลคลิกปุ่มเดียว หรือเพียงพิมพ์สั่ง AI ในแชทง่ายๆ (เช่น "ย้อนกลับไปเวอร์ชันก่อนหน้า" หรือ "undo") ให้ย้อนเวอร์ชันกลับไปจุดก่อนหน้า AI ก็จัดการให้เองอัตโนมัติทันที ปลอดภัย 100% ไม่จำเป็นต้องสลับหน้าจอไปคลิกด้วยตัวเอง โดยระบบเซฟงานสำรองไว้ให้ก่อนเสมอ ไม่ต้องกลัวไฟล์งานพัง</p>
+      <p>AI เช็กเวอร์ชันและย้อนกลับจุด Checkpoint ให้เอง ถ้าผลลัพธ์ไม่ถูกใจ สั่งในแชทว่า "ย้อนกลับไปเวอร์ชันก่อนหน้า" (หรือ "undo") ระบบเซฟสำรองไว้ก่อนย้อนเสมอ</p>
       <div class="card-proof-row swipe-row">
         <figure class="proof-shot">
           <img src="assets/proof/proof_block2_git_status.webp" alt="Git Status ตรวจสอบความเปลี่ยนแปลงของไฟล์" width="400" height="267" loading="lazy">
@@ -1299,40 +1304,40 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
           <figcaption>Commit จุดปลอดภัย 7fc9aaf</figcaption>
         </figure>
       </div>
-      <div class="pro-req py">⚙️ ต้องมี Python 3.10+ และ Git บนคอม (สำหรับคนที่ไม่มีหรือติดตั้งไม่เป็น นี่คืองานแรกที่คุณจะได้ทดสอบ AI Agent ของคุณเอง สั่งมันได้เลย!)</div>
+      <div class="pro-req py">⚙️ ต้องมี Python 3.10+ และ Git บนคอม (ไม่มี? สั่ง AI ติดตั้งให้ได้)</div>
     </div>
     <div class="card">
       <div class="n">③ ย่อยสาระสำคัญ</div>
       <h3>ย่อยโน้ตรายวันอัตโนมัติ (Daily Digest)</h3>
-      <p>แชร์ลิงก์ จดไอเดีย หรือสิ่งที่ต้องทำทิ้งไว้ใน Daily Note จากมือถือ แล้วสั่ง AI สั้นๆ ให้ช่วยคัดแยก 3 ประเภท (To-Do / สรุปความรู้ลง Wiki / สมุดงานโปรเจกต์) พร้อมสคริปต์ตรวจนับและส่วนเสริมซิงค์ Google Tasks</p>
+      <p>แชร์ลิงก์ จดไอเดีย หรือสิ่งที่ต้องทำลง Daily Note แล้วสั่ง AI คัดแยกเป็น To-Do / ความรู้ใน Wiki / สมุดงานโปรเจกต์ พร้อมสคริปต์ตรวจนับและซิงค์ Google Tasks (ส่วนเสริม)</p>
       <div class="card-proof-row">
         <figure class="proof-shot">
-          <img src="assets/proof/proof_note_digest_94.webp" alt="ใบเสร็จย่อยโน้ตครบ 94/94 ชิ้น 100%" width="400" height="889" loading="lazy">
-          <figcaption>ใบเสร็จย่อยโน้ตครบ 94/94 ชิ้น 100%</figcaption>
+          <img src="assets/proof/proof_note_digest_94.webp" alt="ใบเสร็จย่อยโน้ตครบ 94/94 ชิ้น" width="400" height="889" loading="lazy">
+          <figcaption>ใบเสร็จย่อยโน้ตครบ 94/94 ชิ้น</figcaption>
         </figure>
       </div>
-      <div class="pro-req py">⚙️ ต้องมี Python 3.10+ บนคอม (สำหรับคนที่ไม่มีหรือติดตั้งไม่เป็น นี่คืองานแรกที่คุณจะได้ทดสอบ AI Agent ของคุณเอง สั่งมันได้เลย!)</div>
+      <div class="pro-req py">⚙️ ต้องมี Python 3.10+ บนคอม (ไม่มี? สั่ง AI ติดตั้งให้ได้)</div>
     </div>
     <div class="card">
       <div class="n">④ แก้ปัญหาทันที</div>
       <h3>ส่งภาพและคลิปหน้าจอให้ AI ช่วยดู</h3>
-      <p>แอปแชททั่วไปดูภาพหรือคลิปวิดีโอในเครื่องไม่ได้ แต่ใน Obsidian คุณแนบภาพหน้าจอหรือคลิปวิดีโอจากมือถือ AI บนคอมเปิดอ่านภาพและคลิปตรงๆ เพื่อช่วยแก้ปัญหาได้ทันที ไม่ติดลิมิตขนาดไฟล์ (มีสคริปต์ในแพ็กช่วยตรวจจับไฟล์แนบในโน้ตและเตรียมคำสั่งสั่งงานอัตโนมัติ)</p>
+      <p>แอปแชททั่วไปมักเปิดภาพ/คลิปในเครื่องไม่ได้ แต่ใน Obsidian คุณแนบจากมือถือแล้ว AI บนคอมเปิดอ่านตรงๆ ได้ (ตัวอย่างคลิปไฟล์ใหญ่) มีสคริปต์ช่วยตรวจจับไฟล์แนบ</p>
       <div class="card-proof-row swipe-row">
         <figure class="proof-shot">
-          <img src="assets/proof/proof_video_283mb.webp" alt="แนบคลิปวิดีโอ 283 MB ในโน้ต ให้ AI บนคอมเปิดอ่านตรงๆ" width="400" height="267" loading="lazy">
-          <figcaption>แนบคลิป 283 MB ให้ AI เปิดดูตรงๆ</figcaption>
+          <img src="assets/proof/proof_video_283mb.webp" alt="แนบคลิปวิดีโอไฟล์ใหญ่ในโน้ต ให้ AI บนคอมเปิดอ่านตรงๆ" width="400" height="267" loading="lazy">
+          <figcaption>แนบคลิปไฟล์ใหญ่ให้ AI เปิดดูตรงๆ</figcaption>
         </figure>
         <figure class="proof-shot">
           <img src="assets/proof/proof_block4_obsidian_video.webp" alt="คลิปวิดีโอหน้าจอที่แชร์เข้ามาแสดงในโน้ต Obsidian พร้อมให้ AI บนคอมเปิดอ่านตรงๆ" width="464" height="820" loading="lazy">
           <figcaption>คลิปวิดีโอฝังในโน้ต Obsidian ให้ AI เปิดดูได้ทันที</figcaption>
         </figure>
       </div>
-      <div class="pro-req py">⚙️ สคริปต์ตรวจจับไฟล์แนบอัตโนมัติต้องมี Python 3.10+ บนคอม (สำหรับคนที่ไม่มีหรือติดตั้งไม่เป็น นี่คืองานแรกที่คุณจะได้ทดสอบ AI Agent ของคุณเอง สั่งมันได้เลย!)</div>
+      <div class="pro-req py">⚙️ สคริปต์ตรวจจับไฟล์แนบอัตโนมัติต้องมี Python 3.10+ บนคอม (ไม่มี? สั่ง AI ติดตั้งให้ได้)</div>
     </div>
     <div class="card">
       <div class="n">⑤ ระบบฐานราก & นิยามผลลัพธ์</div>
       <h3>ระบบฐานราก Autonomous Stack & Definition of Done</h3>
-      <p>ไม่ใช่แค่ชุดคำสั่งพรอมต์ แต่เป็น<b>ระบบฐานราก (Foundation Stack) ที่ผู้สร้างเซ็ตไว้ตั้งแต่แรก</b> — เปิดสมุดงานนิยามผลลัพธ์สุดท้าย (Definition of Done) ชัดเจนตั้งแต่ก่อนเริ่ม ปล่อยให้ AI ทำเทสต์ แก้ไขตัวเอง และตรวจทานกันเองจนผ่านเกณฑ์ คุณมีหน้าที่แค่ตรวจ Verify ผลลัพธ์สุดท้ายบนมือถือแล้วสั่งแก้รายจุดแบบสบายๆ</p>
+      <p>ไม่ใช่แค่ชุดพรอมต์ แต่เป็น<b>ระบบฐานรากที่ผู้สร้างตั้งไว้</b> — มีสมุดงานและนิยามผลลัพธ์ (Definition of Done) ก่อนเริ่ม ให้ AI ตรวจกันเอง คุณตรวจผลสุดท้ายบนมือถือ</p>
       <div class="card-proof-row swipe-row">
         <figure class="proof-shot">
           <img src="assets/proof/proof_block5_raw_folder.webp" alt="แฟ้ม raw/ โครงสร้างสมุดงานโปรเจกต์" width="400" height="276" loading="lazy">
@@ -1350,16 +1355,16 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       <div class="pro-req ready">✓ มาพร้อมโครงสร้าง Template และแนวทางปฏิบัติมาตรฐาน</div>
     </div>
     <div class="card">
-      <div class="n">⑥ ซิงก์อัตโนมัติ & กวาดอาร์ไคฟ์</div>
-      <h3>ซิงก์อัตโนมัติเมื่อเปิดคอม & กวาด Archive</h3>
-      <p><b>ซิงก์อัตโนมัติทุกครั้งที่เปิดคอม</b> ไม่ต้องคอยกดสั่ง เพราะการให้ AI Agent ทำงานต้องเปิดคอมอยู่แล้ว เมื่อใช้ร่วมกับปลั๊ก Wi-Fi สั่งเปิด/ปิดคอมจากมือถือเวลาไหนก็ได้ นอกเวลานั้นใช้ชีวิตปกติ เพิ่ม Productivity ขึ้น 300% พร้อมระบบกวาดจัดเก็บโน้ตและงานที่เสร็จแล้วเข้าคลังประวัติทุกเช้า (<code>raw_cleanup.py</code>) และระบบควบคุมบริบท Context Cap 40% (<code>context_monitor.py</code>)</p>
+      <div class="n">⑥ ซิงค์อัตโนมัติ & กวาดอาร์ไคฟ์</div>
+      <h3>ซิงค์อัตโนมัติเมื่อเปิดคอม & กวาด Archive</h3>
+      <p><b>ซิงค์อัตโนมัติเมื่อเปิดคอม</b> ใช้ร่วมกับปลั๊ก Wi-Fi เปิด/ปิดคอมจากมือถือ มีสคริปต์กวาดงานที่เสร็จเข้าคลังทุกเช้า (<code>raw_cleanup.py</code>) และคุมบริบท Context Cap 40% (<code>context_monitor.py</code>)</p>
       <div class="card-proof-row">
         <figure class="proof-shot">
           <img src="assets/proof/proof_block6_syncthing.webp" alt="Syncthing-Fork Notification 1 device online and up to date" width="400" height="97" loading="lazy">
-          <figcaption>ซิงก์อัตโนมัติทันที: 1 device online and up to date</figcaption>
+          <figcaption>ซิงค์อัตโนมัติทันที: 1 device online and up to date</figcaption>
         </figure>
       </div>
-      <div class="pro-req py">⚙️ ต้องมี Python 3.10+ บนคอม (สำหรับคนที่ไม่มีหรือติดตั้งไม่เป็น นี่คืองานแรกที่คุณจะได้ทดสอบ AI Agent ของคุณเอง สั่งมันได้เลย!)</div>
+      <div class="pro-req py">⚙️ ต้องมี Python 3.10+ บนคอม (ไม่มี? สั่ง AI ติดตั้งให้ได้)</div>
     </div>
   </div>
 
@@ -1368,7 +1373,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
     <div class="pro-feature-box">
       <div class="feature-tag">🧠 ระบบความจำถาวร (Autonomous System Memory)</div>
       <h4>ศูนย์กลางความจำถาวร <code>wiki/System/Memory.md</code></h4>
-      <p>หัวใจสำคัญที่ทำให้ AI ฉลาดและไม่ออกนอกลู่นอกทาง: บันทึกแผนผังคลังสมอง สถานะงานปัจจุบัน และความจำถาวรข้ามเซสชัน ทำให้ AI ทุกตัวที่เปิดขึ้นมาเข้าใจระบบทันที ไม่ลืมบริบทเดิม ไม่ต้องเริ่มอธิบายใหม่ทุกครั้งที่เปิดแชท</p>
+      <p>บันทึกแผนผังคลังสมอง สถานะงาน และความจำข้ามเซสชัน AI ทุกตัวที่เปิดมาจึงเข้าใจระบบทันที ไม่ต้องอธิบายใหม่ทุกครั้ง</p>
       <figure class="proof-shot feature-proof">
         <img src="assets/proof/proof_memory_md.webp" alt="หน้าไฟล์ Memory.md บันทึกความจำถาวรของระบบ" width="400" height="276" loading="lazy">
         <figcaption>ศูนย์กลางความจำถาวร Memory.md ใน Obsidian</figcaption>
@@ -1377,11 +1382,11 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
     <div class="pro-feature-box">
       <div class="feature-tag">⚡ กฎปฏิบัติการสั่งงานสั้น (Autonomous Rules)</div>
       <h4>สั่งงานสั้นๆ แค่คำเดียว AI รู้หน้าที่ทันที (<code>CLAUDE.md</code> / <code>AGENTS.md</code>)</h4>
-      <p>หมดปัญหาการก๊อปปี้พรอมต์ยาวเหยียด เพราะคุณได้ <b>Setting เดียวกับผู้สร้างเริ่มต้นไปใช้งานทันที</b> และนำมาปรับแต่งให้เหมาะกับสไตล์งานของแต่ละคนได้ในภายหลัง คุณแค่พิมพ์สั่งสั้นๆ จากมือถือ:</p>
+      <p>ไม่ต้องก๊อปพรอมต์ยาว — ได้ค่าตั้งต้นเดียวกับผู้สร้าง ปรับตามสไตล์ตัวเองได้ แล้วพิมพ์สั้นๆ จากมือถือ:</p>
       <ul class="feature-list">
-        <li><b>"ย่อยโน้ตวันนี้":</b> AI อ่าน Daily Note ดึง To-Do ลง Personal Tasks สรุปความรู้เข้า Wiki ทันที</li>
-        <li><b>"ทำต่อ AI - &lt;ชื่องาน&gt;":</b> AI เปิดสมุดงาน ลงมือทำงานย่อยข้อถัดไป พร้อมแปะหลักฐานผลลัพธ์จริง</li>
-        <li><b>"ตรวจงาน AI - &lt;ชื่องาน&gt;":</b> AI สวมบทบาทตัวตรวจ ตรวจสอบหลักฐานจริงและอัปเดตสถานะให้อัตโนมัติ</li>
+        <li><b>"ย่อยโน้ตวันนี้":</b> AI อ่าน Daily Note ดึง To-Do ลง Personal Tasks และสรุปความรู้เข้า Wiki</li>
+        <li><b>"ทำต่อ AI - &lt;ชื่องาน&gt;":</b> AI เปิดสมุดงานและทำงานย่อยข้อถัดไป พร้อมแปะหลักฐาน</li>
+        <li><b>"ตรวจงาน AI - &lt;ชื่องาน&gt;":</b> AI สวมบทตัวตรวจ ตรวจหลักฐานและอัปเดตสถานะ</li>
       </ul>
       <figure class="proof-shot feature-proof">
         <img src="assets/proof/proof_rules_standard.webp" alt="ไฟล์กฎปฏิบัติการ Agent Orchestration Standard" width="400" height="276" loading="lazy">
@@ -1391,24 +1396,25 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
   </div>
 
   <div class="pro-fair">
-    <div class="pro-fair-badge">🎁 สิทธิ์พิเศษเฉพาะผู้ซื้อรอบแรก (Early-Bird Lifetime Updates)</div>
-    <div class="pro-fair-title"><b>ซื้อรอบแรก 99 บาท ได้อัปเดตฟรีตลอดชีพ</b> (ราคาจะปรับขึ้นเมื่อมี workflow เพิ่ม)</div>
+    <div class="pro-fair-badge">🎁 สิทธิ์ผู้ซื้อรอบแรก (Early-Bird)</div>
+    <div class="pro-fair-title"><b>ซื้อรอบแรก 99 บาท ได้รับอัปเดตแพ็กฟรีเมื่อมี workflow เพิ่ม</b> (ราคาจะปรับขึ้นเมื่อมี workflow เพิ่ม)</div>
     <ul class="pro-fair-list">
-      <li><span>🚀</span> <span><b>อัปเดตระบบอัตโนมัติ & สคริปต์ใหม่ๆ ฟรีตลอดไป:</b> เมื่อผู้สร้างพัฒนาเวิร์กโฟลว์หรือสคริปต์เพิ่ม คุณดาวน์โหลดไฟล์อัปเดตได้ฟรีโดยไม่ต้องจ่ายเพิ่ม</span></li>
-      <li><span>🧩</span> <span><b>ฟีเจอร์เสริมแบบโมดูลาร์ (Modular Features):</b> ผู้สร้างพัฒนาฟีเจอร์ใหม่ๆ ที่ทดลองใช้จริงแล้วเวิร์ค นำมาแยกเป็นฟีเจอร์เสริมให้ลูกค้าอัปเดตเรื่อยๆ ไม่ต้องลองผิดลองถูกเอง แค่กดเลือกติดตั้งฟีเจอร์ที่เหมาะกับตัวเองเพื่อให้ AI Agent เก่งขึ้นเรื่อยๆ</span></li>
-      <li><span>📱</span> <span><b>ปุ่มลัด UX มือถือใหม่ๆ:</b> เช่น ทางลัดปุ่มวาร์ปเลื่อนลงล่างสุดใน Daily Note แบบ 1-Click ไม่ต้องเมื่อยนิ้วเลื่อน</span></li>
-      <li><span>🤖</span> <span><b>กฎ AI ฉลาดขึ้นเรื่อยๆ:</b> ปรับปรุง <code>CLAUDE.md</code> และ <code>AGENTS.md</code> ให้ทันสมัยตามโมเดล AI ยุคใหม่เสมอ สั่งงานแม่นยำขึ้น คุมบริบทได้ดียิ่งขึ้น</span></li>
-      <li><span>🔒</span> <span><b>อัปเดตระบบคลิกเดียว ปลอดภัย 100%:</b> แยกโฟลเดอร์ระบบชัดเจน อัปเดตสคริปต์และกฎได้ง่ายดาย โดยไม่กระทบหรือเขียนทับโน้ตส่วนตัวเดิมของลูกค้า 100%</span></li>
+      <li><span>🚀</span> <span><b>อัปเดตสคริปต์และ workflow ใหม่ฟรี:</b> เมื่อผู้สร้างเพิ่ม คุณดาวน์โหลดไฟล์อัปเดตได้โดยไม่จ่ายเพิ่ม</span></li>
+      <li><span>🧩</span> <span><b>ฟีเจอร์เสริมแบบโมดูล:</b> ฟีเจอร์ที่ผู้สร้างลองใช้จริงแล้วเวิร์ค แยกเป็นตัวเลือกให้ติดตั้งเพิ่มได้</span></li>
+      <li><span>📱</span> <span><b>ปุ่มลัด UX มือถือใหม่ๆ:</b> เช่นปุ่มกระโดดไปล่างสุดของ Daily Note แบบ 1-Click</span></li>
+      <li><span>🤖</span> <span><b>กฎ AI ฉลาดขึ้นเรื่อยๆ:</b> ปรับ <code>CLAUDE.md</code> และ <code>AGENTS.md</code> ให้ทันโมเดลใหม่</span></li>
+      <li><span>🔒</span> <span><b>อัปเดตแยกจากโน้ตส่วนตัว:</b> โฟลเดอร์ระบบแยกชัดเจน ออกแบบให้อัปเดตสคริปต์และกฎโดยไม่เขียนทับโน้ตของคุณ</span></li>
     </ul>
   </div>
 
   <div class="buybox" id="pro-buy">
     <div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:2px;">ราคารอบแรก (ถูกที่สุด)</div>
     <div class="price">99 บาท</div>
-    <p style="font-size:14px;color:var(--primary);font-weight:600;margin-top:4px;">จ่ายครั้งเดียว อัปเดตยาวๆ ตามคนสร้าง</p>
+    <p style="font-size:14px;color:var(--primary);font-weight:600;margin-top:4px;">จ่ายครั้งเดียว รับ workflow ที่เพิ่มตามมา</p>
     <p style="font-size:14.5px;margin:10px 0 0;"><b>รวมทุกอย่างในแพ็ก 79 แล้ว ไม่ต้องซื้อเพิ่ม</b> <span class="nowrap">(ตัวติดตั้ง + template + คู่มือไทย)</span></p>
     <div style="max-width:380px;margin:20px auto 0;">
       <a href="#buy" class="btn" style="width:100%;justify-content:center;padding:14px 18px;font-size:15.5px;display:flex;" id="btnGoBuyPro"><span class="nowrap">ไปหน้าซื้อ เลือกแพ็ก Pro ↓</span></a>
+      <p class="scope-note">ใช้กับ Windows 10/11 (64-bit) + Android · ยังไม่รองรับ iPhone/Mac</p>
       <p style="font-size:12.5px;color:var(--muted);margin-top:10px;">ได้โฟลเดอร์ + สคริปต์ของ workflow ทั้ง 6 บล็อกพร้อมใช้ + ความจำถาวรและกฎสั่งงานสั้น (Autonomous Memory & Rules) และทุกบล็อกที่เพิ่มในอนาคต</p>
     </div>
   </div>
@@ -1417,7 +1423,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
 <!-- 7. ซื้อ -->
 <section id="buy"><div class="wrap">
   <h2>ซื้อ Simple Brain</h2>
-  <p class="sub">เลือกแพ็กเดียวที่ใช่ จ่ายครั้งเดียว ไม่มีรายเดือน</p>
+  <p class="sub">เลือกแพ็กเดียว จ่ายครั้งเดียว ไม่มีรายเดือน</p>
   <div class="plans">
     <div class="plan">
       <div class="plan-name">Simple Brain</div>
@@ -1429,6 +1435,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
         <li><span class="check">✓</span><span>คู่มือภาษาไทย</span></li>
       </ul>
       <a href="pay.html?pack=79" class="btn ghost" id="btnBuy"><span class="nowrap">ซื้อ Simple Brain 79 บาท</span></a>
+      <p class="scope-note">ใช้กับ Windows 10/11 (64-bit) + Android · ยังไม่รองรับ iPhone/Mac</p>
     </div>
     <div class="plan pro">
       <div class="plan-badge">คุ้มที่สุด</div>
@@ -1441,15 +1448,16 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
         <li><span class="check">✓</span><span>ได้ workflow ใหม่ที่เพิ่มในอนาคตฟรี</span></li>
       </ul>
       <a href="pay.html?pack=pro" class="btn" id="btnBuyPro"><span class="nowrap">ซื้อ Simple Brain Pro 99 บาท</span></a>
+      <p class="scope-note">ใช้กับ Windows 10/11 (64-bit) + Android · ยังไม่รองรับ iPhone/Mac</p>
     </div>
   </div>
-  <p class="plans-note">เลือกซื้อแพ็กเดียว — แพ็ก Pro รวมทุกอย่างในแพ็ก 79 แล้ว ไม่ต้องซื้อสองแพ็ก</p>
+  <p class="plans-note">เลือกซื้อแพ็กเดียว — แพ็ก Pro รวมทุกอย่างในแพ็ก 79 แล้ว<br>ชำระผ่าน PromptPay แล้วส่งสลิป ระบบตรวจอัตโนมัติ ส่วนใหญ่ได้ลิงก์ดาวน์โหลดทางอีเมลภายในไม่กี่นาที ถ้าสลิปต้องให้ผู้ขายตรวจเอง อาจรอนานขึ้น · <a href="refund.html">เงื่อนไขคืนเงิน</a></p>
   <div class="back-top-box" style="max-width:380px;margin:24px auto 0;text-align:center;">
     <a href="#top" class="btn" style="width:100%;justify-content:center;padding:14px 18px;font-size:15.5px;display:flex;" id="btnBackToTop"><span class="nowrap">กลับไปบนสุด ↑</span></a>
   </div>
 </div></section>
 
-<footer><div class="wrap">© 2026 Simple Brain · ข้อมูลอยู่ในเครื่องคุณ ไม่ขึ้นคลาวด์</div></footer>
+<footer><div class="wrap">© 2026 Simple Brain · <a href="privacy.html">ความเป็นส่วนตัว</a> · <a href="terms.html">เงื่อนไขการใช้งาน</a> · <a href="refund.html">นโยบายคืนเงิน</a></div></footer>
 
 <style>
 /* รูปเต็มตั้งแต่แรก ไม่ต้องกดขยาย · กลุ่มรูป >1 เลื่อนซ้าย-ขวา สไตล์ .t-share */
@@ -1505,7 +1513,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       desc: "ตื่นมาจับมือถือไถฟีด เจอบทความหรือข่าวดีๆ กดปุ่มแชร์ของมือถือแล้วเลือก Obsidian ปุ๊บ ลิงก์และข้อความวิ่งตรงเข้า Daily Note ประจำวันทันที",
       mobile: "แตะแชร์ครั้งเดียวจากแอปข่าว, Facebook หรือ IG",
       backend: "ซิงค์ตรง P2P ไปรอที่คอมที่บ้านทันที ไม่ผ่านคลาวด์รายเดือน",
-      tag: "#แชร์แตะเดียว #DailyNote #ไม่ต้องเปิดคอม",
+      tag: "#แชร์แตะเดียว #DailyNote",
       poster: "assets/clips/scene_0700_morning_poster.jpg",
       clip720: "assets/clips/scene_0700_morning_720p.mp4",
       clip480: "assets/clips/scene_0700_morning_480p.mp4",
@@ -1594,7 +1602,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       title: "17:30 ตลาดสด — เช็กลิสต์ซื้อของเรืองแสง ติ๊กได้บนมือถือ",
       desc: "เปิดดูเช็กลิสต์ซื้อของที่ AI สรุปไว้ให้บนมือถือ เดินเลือกซื้อของอย่างสบายใจ ติ๊กได้ทีละข้อ",
       mobile: "เปิดดูเช็กลิสต์บนมือถือ เดินเลือกซื้อของอย่างสบายใจ",
-      backend: "ไฟล์เช็กลิสต์สร้างโดย AI บนคอมและซิงค์มามือถือในเสี้ยววินาที",
+      backend: "ไฟล์เช็กลิสต์สร้างโดย AI บนคอมและซิงค์มามือถือในไม่กี่วินาที",
       tag: "#เช็กลิสต์ซื้อของ #ไม่ลืมของ #ติ๊กได้ทันที",
       poster: "assets/clips/scene_1700_market_poster.jpg",
       clip720: "assets/clips/scene_1700_market_720p.mp4",
@@ -1624,7 +1632,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       title: "20:00 แก้ปัญหาทันใจ — ส่งคลิปวิดีโอให้ AI ดูและช่วยแก้",
       desc: "แอปแชท AI ส่วนใหญ่แนบวิดีโอไม่ได้ — แต่ใน Obsidian คอมเปิดได้ทุกไฟล์ AI เลยดูคลิปแล้วแก้ให้ได้ทันที เพียงคุณอัดคลิปหน้าจอปัญหาวิดีโอสั้นแล้วแชร์ลง Daily Note AI บนคอมเปิดดูทีละเฟรมและแก้ให้ตรงจุด",
       mobile: "อัดวิดีโอหน้าจอมือถือ แล้วกดแชร์เข้า Daily Note",
-      backend: "คอมเปิดไฟล์วิดีโอได้ทุกฟอร์แมต AI วิเคราะห์ภาพและแก้ปัญหาได้ตรงจุด",
+      backend: "คอมเปิดไฟล์วิดีโอได้AI วิเคราะห์ภาพและแก้ปัญหาได้ตรงจุด",
       tag: "#ส่งคลิปให้AI #Obsidianเปิดได้ทุกไฟล์ #แก้ปัญหาทันที",
       poster: "assets/clips/scene_video_fix_poster.jpg",
       clip720: "assets/clips/scene_video_fix_720p.mp4",
@@ -1652,9 +1660,9 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       time: "Obsidian",
       label: "คลังสมอง",
       title: "ทำไมต้อง Obsidian — คลังสมองส่วนตัว สะพานแสงเชื่อมสองฝั่ง",
-      desc: "ข้อมูลเป็นของคุณอย่างแท้จริง เก็บในไฟล์ Markdown บนเครื่อง ไม่ถูกขังในคลาวด์ สะพานแสง P2P ซิงค์ตรงปลอดภัย",
+      desc: "ข้อมูลเป็นของคุณอย่างแท้จริง เก็บในไฟล์ Markdown บนเครื่อง ไม่ถูกขังในคลาวด์ ซิงค์ตรงระหว่างเครื่องแบบ P2P",
       mobile: "เข้าถึงข้อมูลได้แม้ออฟไลน์ ไม่มีโฆษณา ไม่ถูกล็อกอินบังคับ",
-      backend: "สะพานแสง P2P ซิงค์ตรงแบบไร้ศูนย์กลาง รวดเร็ว ปลอดภัย สูงสุด",
+      backend: "สะพานแสง P2P ซิงค์ตรงแบบไร้ศูนย์กลาง รวดเร็ว เข้ารหัสระหว่างทาง",
       tag: "#ข้อมูลเป็นของคุณ #ไม่มีคลาวด์ผูกขาด #P2PSync",
       poster: "assets/clips/scene_why_obsidian_poster.jpg",
       clip720: "assets/clips/scene_why_obsidian_720p.mp4",
@@ -1667,7 +1675,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       time: "สรุป",
       label: "79 บาท",
       title: "สรุปปิดท้าย — มือถือ + คอม + คลังสมอง บนแท่นเดียว 79 บาท",
-      desc: "เชื่อมมือถือ Android กับคอม Windows ให้พร้อมใช้งานในไม่กี่นาที จ่ายครั้งเดียว 79 บาท ไม่มีรายเดือนตลอดชีพ",
+      desc: "เชื่อมมือถือ Android กับคอม Windows ให้พร้อมใช้งานในไม่กี่นาที จ่ายครั้งเดียว 79 บาท ไม่มีรายเดือน",
       mobile: "พร้อมใช้งานบนมือถือทันที สแกน QR แล้วเริ่มลุย",
       backend: "ระบบซิงค์ทำงานเบา ไม่กินแรม ประหยัดแบตเตอรี่",
       tag: "#79บาทครั้งเดียว #พร้อมใช้งานทันที #ไม่มีรายเดือน",
