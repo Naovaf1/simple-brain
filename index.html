@@ -885,6 +885,10 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
         </div>
         <span>คอม</span>
       </div>
+      <figure class="proof-shot sync-first-open">
+        <img src="assets/proof/proof_first_open_pc.webp" alt="หน้าแรกบนคอมหลังจับคู่สำเร็จ" width="1200" height="938" loading="lazy">
+        <figcaption>หน้าแรกบนคอมหลังจับคู่สำเร็จ</figcaption>
+      </figure>
       <div class="sync-proof-grid swipe-row">
         <figure class="proof-shot">
           <span class="sync-badge-limit bad">ตัวอย่าง: เปิดวิดีโอไม่ได้</span>
@@ -908,6 +912,11 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       <h3>ใช้ AI ที่คุณมีอยู่แล้ว <span class="nowrap">ทำงานต่อให้</span></h3>
       <p>ใช้กับ agent ที่คุณมี เช่น <span class="nowrap">Claude Code</span> / <span class="nowrap">ChatGPT Codex</span> / <span class="nowrap">Google Antigravity</span> — AI บนคอมเปิดวิดีโอและภาพใน Daily Note ได้ตรงๆ แล้วเขียนผลลงโน้ตให้ตรวจจากมือถือ</p>
       <div class="term">&gt; อ่านโน้ตวันนี้และคลิปวิดีโอ…<br>&gt; วินิจฉัยปัญหาและสร้างโค้ดแก้ไข <b>✓</b><br>&gt; เขียนผลลง daily note ให้ตรวจบนมือถือ <b>✓</b></div>
+          <div class="agent-proof">
+        <figure class="proof-shot"><img src="assets/proof/proof_agent_raw_folder.webp" alt="โฟลเดอร์ raw ใน Obsidian ที่มีโน้ตวันนี้" width="420" height="843" loading="lazy"><figcaption>โน้ตวันนี้อยู่ใน raw</figcaption></figure>
+        <figure class="proof-shot"><img src="assets/proof/proof_agent_daily_note.webp" alt="โน้ตวันนี้ที่แนบข้อความและไฟล์ไว้" width="420" height="843" loading="lazy"><figcaption>AI อ่านโน้ตวันนี้</figcaption></figure>
+        <figure class="proof-shot"><img src="assets/proof/proof_agent_notebook.webp" alt="สมุดงานที่ AI เขียนผลให้ตรวจบนมือถือ" width="420" height="843" loading="lazy"><figcaption>เขียนผลลงสมุดงานให้ตรวจ</figcaption></figure>
+      </div>
     </div>
     <div class="tile t-daily rv">
       <div>
@@ -947,6 +956,10 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
       <h3>เปิดครั้งแรกก็รู้ว่า<span class="nowrap">ทำอะไรต่อ</span></h3>
       <div class="shot"><img src="assets/shots/welcome.webp" alt="หน้าคู่มือต้อนรับใน Obsidian บนมือถือ: วิธีใช้งานทุกวันและโฟลเดอร์ในสมองของคุณ" loading="lazy"></div>
       <p style="font-size:13.5px;color:var(--muted);margin-top:8px;">คู่มือภาษาไทย โครงสร้างพร้อมใช้ตั้งแต่เปิดแอป</p>
+      <figure class="proof-shot guide-pc">
+        <img src="assets/proof/proof_first_open_pc.webp" alt="หน้าแรกบนคอมหลังจับคู่สำเร็จ" width="1200" height="938" loading="lazy">
+        <figcaption>หน้าแรกบนคอมหลังจับคู่สำเร็จ</figcaption>
+      </figure>
     </div>
   </div>
 </div></section>
@@ -1489,6 +1502,15 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
 </style>
 
 <style>
+/* desktop-only proof figures: hidden by default so the phone layout stays identical */
+.sync-first-open,.guide-pc{display:none!important}
+/* agent proof: swipe row on phone (desktop grid is set in the min-width block) */
+.agent-proof{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:var(--s3);padding-bottom:6px;-webkit-overflow-scrolling:touch}
+.agent-proof .proof-shot{flex:0 0 62%;scroll-snap-align:start;margin:0}
+.agent-proof .proof-shot img{width:100%;height:auto;display:block}
+</style>
+
+<style>
 /* ===== Desktop layout (>=861px only; mobile/tablet untouched) ===== */
 @media (min-width:861px){
   /* 1. image strips -> visible equal-column grids (no hidden horizontal scroll) */
@@ -1500,7 +1522,7 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
     scroll-snap-type:none!important;
     gap:16px!important;
     padding-bottom:0!important;
-    align-items:start!important;
+    align-items:center!important;
   }
   .swipe-row>figure,.swipe-row>.proof-shot,.swipe-row>.wf-shot{
     flex:none!important;
@@ -1511,39 +1533,73 @@ footer{border-top:1px solid var(--line);padding:32px 0;text-align:center;color:v
   .wf-grid-pair.swipe-row{max-width:760px;margin-left:auto;margin-right:auto}
   .wf-grid-pair.swipe-row:has(> :nth-child(3)){max-width:none}
 
-  /* 2. bento: every tile full width, content-sized, text beside media */
+  /* 2. bento */
   .tile p{max-width:75ch}
-  .t-sync,.t-agent,.t-daily,.t-guide{grid-column:span 6}
+  /* 7.2 restore the pre-1516b4a pair: sync card half width beside "คอมทำให้" */
+  .t-sync,.t-agent{grid-column:span 3}
+  .t-guide,.t-daily{grid-column:span 6}
   .t-sync{order:2}.t-agent{order:3}.t-guide{order:4}.t-daily{order:5}
-  .t-sync .flow{max-width:560px}
-  .t-sync .sync-proof-grid{margin-top:var(--s3)}
-  .t-agent{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr repeat(3,min-content) 1fr;column-gap:var(--s4)}
-  .t-agent>.term{grid-column:2;grid-row:1 / span 5;align-self:center;margin-top:0;}
-  .t-agent>.k{grid-column:1;grid-row:2}.t-agent>h3{grid-column:1;grid-row:3}.t-agent>p{grid-column:1;grid-row:4}
-  .t-agent .term{font-size:14.5px}
-  .t-guide{display:grid;grid-template-columns:1fr 240px;grid-template-rows:1fr repeat(3,min-content) 1fr;column-gap:var(--s4)}
-  .t-guide>.shot{grid-column:2;grid-row:1 / span 5;align-self:center;margin:0;max-width:240px;max-height:none;}
+  /* desktop keeps the dashed phone-PC line (same as mobile) and also shows the PC first-open shot */
+  .t-sync .flow{display:flex;margin-bottom:var(--s3)}
+  .t-sync .sync-first-open{display:flex!important;margin:0 0 var(--s3)}
+  .t-sync .sync-proof-grid{margin-top:0}
+  /* card 3 content stays vertically centred when it is the shorter half of the pair */
+  .t-agent{display:flex;flex-direction:column;justify-content:center}
+  .t-agent .term{margin-top:var(--s2)}
+  .t-agent .agent-proof{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:var(--s3);align-items:start}
+  .t-agent .agent-proof .proof-shot img{max-height:400px;width:100%;object-fit:cover;object-position:top}
+  .t-agent .agent-proof .proof-shot figcaption{font-size:12.5px;padding:8px 10px}
+  /* 7.3 guide card: phone shot paired with the PC first-open shot */
+  .t-guide{display:grid;grid-template-columns:minmax(0,1fr) minmax(140px,190px) minmax(220px,400px);grid-template-rows:1fr repeat(3,min-content) 1fr;column-gap:var(--s3)}
+  .t-guide>.shot{grid-column:2;grid-row:1 / span 5;align-self:center;margin:0;max-width:190px;max-height:420px;overflow:hidden}
+  .t-guide>.guide-pc{display:flex!important;grid-column:3;grid-row:1 / span 5;align-self:center;width:100%;max-width:400px;margin:0}
+  .t-guide>.guide-pc img{max-height:340px!important}
   .t-guide>.k{grid-column:1;grid-row:2}.t-guide>h3{grid-column:1;grid-row:3}.t-guide>p{grid-column:1;grid-row:4}
+  .t-guide>h3{font-size:1.6em}
+  /* 7.4 short folder shots centred against the tall To-Do shot */
   .t-daily{display:block}
-  .t-daily .daily-proof-grid{margin-top:var(--s3);gap:14px!important;grid-auto-flow:row!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
-  .t-daily .daily-proof-grid .proof-shot img{max-height:360px!important;object-fit:contain!important}
+  .t-daily .daily-proof-grid{margin-top:var(--s3);gap:14px!important;grid-auto-flow:row!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;align-items:center!important}
+  .t-daily .daily-proof-grid .proof-shot img{max-height:420px!important;object-fit:cover!important;object-position:top!important}
   .t-daily .daily-proof-grid .proof-shot figcaption{font-size:12.5px;padding:8px 10px}
   .share-video-callout{grid-template-columns:260px minmax(0,460px);justify-content:center;gap:var(--s4);padding:20px 24px}
   .share-video-callout .proof-shot{max-width:260px}
   .share-video-callout p{font-size:16px;line-height:1.7}
 
-  /* generic card grids: content-sized, no giant empty cards */
+  /* 7.5-7.7 generic card grids */
   .cards.pro-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
   .card p,.pro-feature-box p,.pro-wf-card-meta p{max-width:75ch}
   .pro-features-grid{max-width:1000px}
-  .feature-proof{margin-left:auto;margin-right:auto;max-width:280px}
-  .card-proof-row:not(.swipe-row){max-width:260px}
   .companion-screen-off-box{grid-template-columns:minmax(0,420px) 300px;justify-content:center;gap:40px}
-  /* keep tall phone shots from leaving big empty areas */
-  .t-guide>.shot{max-height:440px;overflow:hidden}
-  .t-guide>h3{font-size:1.6em}
-  .feature-proof img{max-height:380px;object-fit:cover;object-position:top}
+
+  /* tall phone shots capped; media centred in the free space of paired cards */
+  .card-proof-row{flex:1 1 auto}
+  .card-proof-row.swipe-row{align-content:center}
+  .card-proof-row:not(.swipe-row){max-width:260px;align-items:center}
+  .card-proof-row .proof-shot img{max-height:420px!important;object-fit:cover!important;object-position:top!important}
+  .pro-cards .card:has(img[src*="proof_note_digest_94"]) .card-proof-row:not(.swipe-row){max-width:280px}
+  /* 7.7 notification shot ~90% of the column, centred vertically */
+  .pro-cards .card:has(img[src*="proof_block6_syncthing"]) .card-proof-row:not(.swipe-row){max-width:90%}
+  /* pro workflow rows: same centre + cap rule */
+  .wf-grid-pair{align-items:center!important}
+  .wf-grid-pair .wf-shot img,.wf-grid-pair .proof-shot img{max-height:420px!important;object-fit:cover!important;object-position:top!important}
+  .wf-grid-single .wf-shot img{max-height:420px!important;object-fit:cover!important;object-position:top!important}
+  /* 7.5 feature boxes: media vertically centred in the shorter card */
+  .feature-proof{margin-left:auto!important;margin-right:auto!important;margin-top:auto!important;margin-bottom:auto!important;max-width:280px}
+  .feature-proof img{max-height:380px!important;object-fit:cover!important;object-position:top!important}
 }
+
+/* large desktop screens: let the content use more of the width */
+@media (min-width:1400px){
+  .wrap{max-width:1320px}
+  .share-video-callout{grid-template-columns:300px minmax(0,680px)}
+  .share-video-callout .proof-shot{max-width:300px}
+  .share-video-callout p{font-size:17px}
+}
+/* big/hi-res screens: scale the whole page up so text and cards are not tiny */
+@media (min-width:1700px){ html{zoom:1.15} .wrap{max-width:1320px} }
+@media (min-width:1900px){ html{zoom:1.3}  .wrap{max-width:1280px} }
+@media (min-width:2300px){ html{zoom:1.55} .wrap{max-width:1280px} }
+@media (min-width:2800px){ html{zoom:1.9}  .wrap{max-width:1280px} }
 </style>
 
 <script>
